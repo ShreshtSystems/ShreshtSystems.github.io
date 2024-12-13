@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about {
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    height: 10vh;
+}
+
+@media  (max-width:1100px){
+    
+}
+
+@media  (max-width:768px){
+    .menu-links {
+        width: 70vw;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .title h1{
+        font-size: 2.7rem;
+    }
+}

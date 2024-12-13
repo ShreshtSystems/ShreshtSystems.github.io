@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about {
+    width: 90vw;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title p {
+    font-size: 1.3rem;
+}
+
+.title div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bar1 {
+    height: 10vh;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, rgba(118, 255, 141, 0.351), rgba(37, 255, 73, 0.811));
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+.content h2 {
+    width: 20vw;
+    font-size: 3.7rem;
+}
+
+.content p {
+    width: 50vw;
+    font-size: 1.7rem;
+}
+
+#values {
+    flex-direction: column;
+}
+
+#values h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#values div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.csub {
+    width: 45%;
+    background-color: white;
+    height: 30vh;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.csub h3 {
+    font-size: 1.4rem;
+}
+
+.csub p {
+    font-size: 1.2rem;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+footer {
+    height: 10vh;
+}
+
+@media (max-width:1100px) {
+    .logo {
+        height: 50px;
+    }
+
+    .menu-links {
+        width: 70vw;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .menu-links {
+        width: 70vw;
+    }
+
+    .title h1 {
+        font-size: 2.7rem;
+    }
+
+    .title p {
+        padding: 2%;
+    }
+
+    .title div {
+        width: 90%;
+    }
+
+    .bar1{
+        font-size: 0.9rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content h2 {
+        font-size: 2.1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    #values div {
+        flex-direction: column;
+    }
+
+    .csub {
+        width: 100%;
+    }
+}
