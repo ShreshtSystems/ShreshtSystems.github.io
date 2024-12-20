@@ -5,68 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Shresht Systems</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/contact_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <section id="about">
-        <header>
-            <div class="logo"><img src="./assets/Shresht-Logo-Final.png" alt="logo"
-                    onclick="window.location='./index.html'"></div>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./solar.html">Solar Systems</a></li>
-                    <li><a href="./cctv.html">CCTV Systems</a></li>
-                    <li><a href="./homeAppliances.html">Home appliences</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./about.html">About Us</a></li>
+<body class="font-sans bg-gray-50 text-gray-900 h-screen flex flex-col justify-between">
+    <!-- Header Section -->
+    <section id="about" class="bg-white shadow-md">
+        <header class="flex justify-between items-center p-4">
+            <!-- Logo -->
+            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
+                <img src="./assets/Shresht-Logo-Final.png" alt="logo" class="h-12">
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="./solar.html" class="hover:text-blue-600">Solar Systems</a></li>
+                    <li><a href="./cctv.html" class="hover:text-blue-600">Security Systems</a></li>
+                    <li><a href="./homeAppliances.html" class="hover:text-blue-600">Home Appliances</a></li>
+                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="./about.html" class="hover:text-blue-600">About Us</a></li>
                 </ul>
             </nav>
-            <div class="side-nav">
-                <span><img src="./assets/pin.png" alt="pin"></span>
-            </div>
-            <nav class="hamburger-nav">
-                <div class="hamburger-menu">
-                    <div class="hamburger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><a href="./solar.html" onclick="toggleMenu()">Solar Systems</a></li>
-                        <li><a href="./cctv.html" onclick="toggleMenu()">CCTV Systems</a></li>
-                        <li><a href="./homeAppliances.html" onclick="toggleMenu()">Home appliences</a></li>
-                        <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="./about.html" onclick="toggleMenu()">About Us</a></li>
-                    </div>
-                </div>
-            </nav>
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+            </button>
         </header>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
+            <nav class="space-y-4">
+                <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
+                <a href="./solar.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
+                <a href="./cctv.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
+                <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
+                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
+            </nav>
+        </div>
     </section>
-    <section id="contact">
-        <h1>Get in Touch</h1>
-        <div class="container">
-            <div class="csub">
-                <div class="img"><img src="./assets/location-pin.png" alt="icon"></div>
-                <p>Harshitha Building, Onthibettu, Udupi District - 576113</p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-white">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Get in Touch</h1>
+        <div class="container max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Address -->
+            <div class="csub flex items-center space-x-4">
+                <div class="img">
+                    <img src="./assets/location-pin.png" alt="icon" class="h-8 w-8">
+                </div>
+                <p class="text-lg text-gray-600">Harshitha Building, Onthibettu, Udupi District - 576113</p>
             </div>
-            <div class="csub">
-                <div class="img"><img src="./assets/telephone.png" alt="icon"></div>
-                <p>Phone: <a href="tel:+917204657707">7204657707</a>, <a href="tel:+919901730305">9901730305</a></p>
+            <!-- Phone Numbers -->
+            <div class="csub flex items-center space-x-4">
+                <div class="img">
+                    <img src="./assets/telephone.png" alt="icon" class="h-8 w-8">
+                </div>
+                <p class="text-lg text-gray-600">Phone: <a href="tel:+917204657707" class="text-blue-600">7204657707</a>, <a href="tel:+919901730305" class="text-blue-600">9901730305</a></p>
             </div>
-            <div class="csub">
-                <div class="img"><img src="./assets/email.png" alt="icon"></div>
-                <p>Email: <a href="mailto:shreshtsystems@gmail.com">shreshtsystems@gmail.com</p></a>
+            <!-- Email -->
+            <div class="csub flex items-center space-x-4">
+                <div class="img">
+                    <img src="./assets/email.png" alt="icon" class="h-8 w-8">
+                </div>
+                <p class="text-lg text-gray-600">Email: <a href="mailto:shreshtsystems@gmail.com" class="text-blue-600">shreshtsystems@gmail.com</a></p>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="./about.html" class="hover:underline">About</a>
+                <a href="./contact.html" class="hover:underline">Support</a>
+                <a href="./solar.html" class="hover:underline">Services</a>
+                <a href="./contact.html" class="hover:underline">Contact</a>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+        </div>
     </footer>
-    <script src="./script/script.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
