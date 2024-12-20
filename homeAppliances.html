@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Appliances - Shresht Systems</title>
     <link rel="icon" href="./assets/icon.png" type="image/icon type">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/homeAppliances_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section id="about">
-        <header>
-            <div class="logo"><img src="./assets/Shresht-Logo-Final.png" alt="logo" onclick="window.location='./index.html'"></div>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./cctv.html">CCTV Systems</a></li>
-                    <li><a href="./homeAppliances.html">Home appliences</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+
+<body class="bg-gray-100 text-gray-900">
+    <section id="about" class="bg-white shadow-md">
+        <header class="flex justify-between items-center p-4">
+            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
+                <img src="./assets/Shresht-Logo-Final.png" alt="logo" class="h-12">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="./solar.html" class="hover:text-blue-600">Solar Systems</a></li>
+                    <li><a href="./cctv.html" class="hover:text-blue-600">Security Systems</a></li>
+                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="./about.html" class="hover:text-blue-600">About Us</a></li>
+                    <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
                 </ul>
             </nav>
-            <div class="side-nav">
-                <span><img src="./assets/pin.png" alt="pin"></span>
-            </div>
-            <nav class="hamburger-nav">
-                <div class="hamburger-menu">
-                    <div class="hamburger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><a href="./cctv.html" onclick="toggleMenu()">CCTV Systems</a></li>
-                        <li><a href="./homeAppliances.html" onclick="toggleMenu()">Home appliences</a></li>
-                        <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="./about.html" onclick="toggleMenu()">About Us</a></li>
-                        <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-                    </div>
-                </div>
-            </nav>
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+            </button>
         </header>
-        <div class="title">
-            <h1>Home appliences</h1>
-            <h2>Your trusted partner for Solar Energy Providers</h2>
-            <p>Shresht Systems provides reliable Solar Energy and advanced CCTV Security solutions. we focus on
-                sustainability and safety.</p>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
+            <nav class="space-y-4">
+                <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
+                <a href="./solar.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
+                <a href="./cctv.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
+                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
+                <a href="./contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
+            </nav>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+
+    <section id="about" class="py-16 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-800">Home Appliances</h1>
+            <h2 class="text-2xl mt-4 text-gray-600">Your trusted partner for Solar Energy Providers</h2>
+            <p class="mt-6 text-gray-600">Shresht Systems provides reliable Solar Energy and advanced CCTV Security solutions. We focus on sustainability and safety.</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+        </div>
     </footer>
-    <script src="./script/script.js"></script>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
+    </script>
 </body>
+
 </html>

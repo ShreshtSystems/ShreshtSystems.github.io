@@ -6,104 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Shresht Systems</title>
     <link rel="icon" href="./assets/icon.png" type="image/icon type">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/about_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <div class="logo"><img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo"
-                onclick="window.location='./index.html'"></div>
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./solar.html">Solar Systems</a></li>
-                <li><a href="./cctv.html">CCTV Systems</a></li>
-                <li><a href="./homeAppliances.html">Home Appliances</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="side-nav">
-            <span><img src="./assets/pin.png" alt="Location Pin"></span>
-        </div>
-        <nav class="hamburger-nav">
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="./solar.html" onclick="toggleMenu()">Solar Systems</a></li>
-                    <li><a href="./cctv.html" onclick="toggleMenu()">CCTV Systems</a></li>
-                    <li><a href="./homeAppliances.html" onclick="toggleMenu()">Home Appliances</a></li>
-                    <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-                </div>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md px-4 py-6">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
+                <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" class="h-12">
             </div>
-        </nav>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="./solar.html" class="hover:text-blue-600">Solar Systems</a></li>
+                    <li><a href="./cctv.html" class="hover:text-blue-600">Security Systems</a></li>
+                    <li><a href="./homeAppliances.html" class="hover:text-blue-600">Home Appliances</a></li>
+                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+            </button>
+        </div>
     </header>
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
+        <nav class="space-y-4">
+            <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
+            <a href="./solar.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
+            <a href="./cctv.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
+            <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
+            <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
+            <a href="./contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
+        </nav>
+    </div>
 
-    <section id="about">
-        <div class="title">
-            <h1>About Us</h1>
-            <p>Shresht Systems, based in Udupi District, is your trusted partner in providing cutting-edge solutions for
-                energy efficiency, security, and home innovation. Situated at Harshitha Building, Ontibettu, we are
-                dedicated to delivering exceptional service and high-quality products to meet the evolving needs of both
-                residential and commercial clients.</p>
-            <p>With years of expertise, we specialize in:</p>
-            <div>
-                <div class="bar1">Solar Solutions: Solar rooftop installations, solar panels, and solar water heaters.</div>
-                <div class="bar1">Security Systems: Advanced CCTV setups for enhanced safety.</div>
-                <div class="bar1">Energy Products: UPS-inverter batteries for reliable power backup.</div>
-                <div class="bar1">Lifestyle Enhancements: LED lights and water softeners for modern living.</div>
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="title text-center mb-16">
+            <h1 class="text-3xl font-bold text-gray-800">About Us</h1>
+            <p class="mt-4 text-lg text-gray-600">Shresht Systems, based in Udupi District, is your trusted partner in providing cutting-edge solutions for energy efficiency, security, and home innovation. Situated at Harshitha Building, Ontibettu, we are dedicated to delivering exceptional service and high-quality products to meet the evolving needs of both residential and commercial clients.</p>
+            <p class="mt-4 text-lg text-gray-600">With years of expertise, we specialize in:</p>
+            <div class="mt-4">
+                <div class="bar1 text-gray-700">Solar Solutions: Solar rooftop installations, solar panels, and solar water heaters.</div>
+                <div class="bar1 text-gray-700">Security Systems: Advanced CCTV setups for enhanced safety.</div>
+                <div class="bar1 text-gray-700">Energy Products: UPS-inverter batteries for reliable power backup.</div>
+                <div class="bar1 text-gray-700">Lifestyle Enhancements: LED lights and water softeners for modern living.</div>
             </div>
         </div>
     </section>
 
-    <section id="mission" class="content">
-        <h2>Our Mission</h2>
-        <p>Our mission is to provide sustainable and innovative technology solutions that enhance security, convenience,
-            and energy efficiency. By leveraging the latest advancements, we aim to contribute to a safer, greener, and
-            smarter future for our clients.</p>
+    <!-- Mission Section -->
+    <section id="mission" class="content py-16 px-4 bg-gray-50">
+        <h2 class="text-2xl font-semibold text-center text-gray-800">Our Mission</h2>
+        <p class="mt-4 text-lg text-center text-gray-600">Our mission is to provide sustainable and innovative technology solutions that enhance security, convenience, and energy efficiency. By leveraging the latest advancements, we aim to contribute to a safer, greener, and smarter future for our clients.</p>
     </section>
 
-    <section id="vision" class="content">
-        <h2>Our Vision</h2>
-        <p>We envision a world where every household and business operates with maximum efficiency, security, and
-            sustainability. As pioneers in the industry, our goal is to integrate technology seamlessly into everyday
-            life, creating a balance between comfort and responsibility.</p>
+    <!-- Vision Section -->
+    <section id="vision" class="content py-16 px-4 bg-white">
+        <h2 class="text-2xl font-semibold text-center text-gray-800">Our Vision</h2>
+        <p class="mt-4 text-lg text-center text-gray-600">We envision a world where every household and business operates with maximum efficiency, security, and sustainability. As pioneers in the industry, our goal is to integrate technology seamlessly into everyday life, creating a balance between comfort and responsibility.</p>
     </section>
 
-    <section id="values" class="content">
-        <h2>Core Values</h2>
-        <div>
-            <div class="csub">
-                <h3>Innovation</h3>
-                <p>Staying ahead with the latest advancements in technology.</p>
+    <!-- Core Values Section -->
+    <section id="values" class="content py-16 px-4 bg-gray-50">
+        <h2 class="text-2xl font-semibold text-center text-gray-800">Core Values</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="csub text-center">
+                <h3 class="text-xl font-bold text-gray-800">Innovation:</h3>
+                <p class="mt-2 text-gray-600">Staying ahead with the latest advancements in technology.</p>
             </div>
-            <div class="csub">
-                <h3>Integrity</h3>
-                <p>Upholding transparency and trust in every interaction.</p>
+            <div class="csub text-center">
+                <h3 class="text-xl font-bold text-gray-800">Integrity:</h3>
+                <p class="mt-2 text-gray-600">Upholding transparency and trust in every interaction.</p>
             </div>
-            <div class="csub">
-                <h3>Customer Commitment</h3>
-                <p>Delivering personalized services that exceed expectations.</p>
+            <div class="csub text-center">
+                <h3 class="text-xl font-bold text-gray-800">Customer Commitment:</h3>
+                <p class="mt-2 text-gray-600">Delivering personalized services that exceed expectations.</p>
             </div>
-            <div class="csub">
-                <h3>Quality Excellence</h3>
-                <p>Ensuring the highest standards in every product and service we offer.</p>
+            <div class="csub text-center">
+                <h3 class="text-xl font-bold text-gray-800">Quality Excellence:</h3>
+                <p class="mt-2 text-gray-600">Ensuring the highest standards in every product and service we offer.</p>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
         <p>&copy; 2024 Shresht Systems. All rights reserved.</p>
     </footer>
 
-    <script src="./script/script.js"></script>
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>

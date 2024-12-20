@@ -4,82 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shresht Systems - CCTV</title>
+    <title>Shresht Systems - Security Systems</title>
     <link rel="icon" href="./assets/icon.png" type="image/icon type">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/cctv_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <div class="logo"><img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" onclick="window.location='./index.html'"></div>
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./solar.html">Solar Systems</a></li>
-                <li><a href="./homeAppliances.html">Home Appliances</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="side-nav">
-            <span><img src="./assets/pin.png" alt="Location Pin"></span>
-        </div>
-        <nav class="hamburger-nav">
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="./solar.html" onclick="toggleMenu()">Solar Systems</a></li>
-                    <li><a href="./homeAppliances.html" onclick="toggleMenu()">Home Appliances</a></li>
-                    <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="./about.html" onclick="toggleMenu()">About Us</a></li>
-                    <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-                </div>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md">
+        <div class="flex justify-between items-center p-4">
+            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
+                <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" class="h-12">
             </div>
-        </nav>
+            <nav class="hidden md:flex space-x-8">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="./solar.html" class="hover:text-blue-600">Solar Systems</a></li>
+                    <li><a href="./homeAppliances.html" class="hover:text-blue-600">Home Appliances</a></li>
+                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="./about.html" class="hover:text-blue-600">About Us</a></li>
+                    <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
+            <nav class="space-y-4">
+                <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
+                <a href="./solar.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
+                <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
+                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
+                <a href="./contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <div class="title">
-            <h1>CCTV Security Systems</h1>
-            <h2>High-Quality Security Solutions for Your Home and Business</h2>
-            <p>At Shresht Systems, we offer reliable and professional services to ensure the safety and automation of your premises with cutting-edge technology.</p>
+    <section id="about" class="py-16 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-800">Security Systems</h1>
+            <h2 class="text-2xl mt-4 text-gray-600">High-Quality Security Solutions for Your Home and Business</h2>
+            <p class="mt-6 text-gray-600">At Shresht Systems, we offer reliable and professional services to ensure the safety and automation of your premises with cutting-edge technology.</p>
         </div>
     </section>
 
-    <section id="services">
-        <h2>Our Professional Services</h2>
-        <ul>
-            <li>CCTV Camera & Alarm Systems</li>
-            <li>Intercom Systems</li>
-            <li>Home & Business Automation</li>
-            <li>Installation & Maintenance</li>
-            <li>Free Telephone Tech Support</li>
-            <li>Qualified CCTV Installers</li>
-        </ul>
+    <section id="services" class="py-16 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Professional Services</h2>
+            <ul class="list-disc list-inside text-left mx-auto max-w-3xl text-gray-600">
+                <li>CCTV Camera & Alarm Systems</li>
+                <li>Intercom Systems</li>
+                <li>Home & Business Automation</li>
+                <li>Installation & Maintenance</li>
+                <li>Free Telephone Tech Support</li>
+                <li>Qualified CCTV Installers</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="features">
-        <h2>Advanced Tech Features</h2>
-        <ul>
-            <li>Infrared Detection</li>
-            <li>Night Vision Technology</li>
-            <li>High-Definition Resolution</li>
-            <li>Off-Site Monitoring and Control</li>
-        </ul>
+    <section id="features" class="py-16 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Advanced Tech Features</h2>
+            <ul class="list-disc list-inside text-left mx-auto max-w-3xl text-gray-600">
+                <li>Infrared Detection</li>
+                <li>Night Vision Technology</li>
+                <li>High-Definition Resolution</li>
+                <li>Off-Site Monitoring and Control</li>
+            </ul>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Shresht Systems. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="./about.html" class="hover:underline">About</a>
+                <a href="./contact.html" class="hover:underline">Support</a>
+                <a href="./solar.html" class="hover:underline">Services</a>
+                <a href="./contact.html" class="hover:underline">Contact</a>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="./script/script.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
