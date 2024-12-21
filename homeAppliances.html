@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-gray-100 text-gray-900">
+    <!-- Header Section -->
     <section id="about" class="bg-white shadow-md">
         <header class="flex justify-between items-center p-4">
             <div class="logo cursor-pointer" onclick="window.location='./index.html'">
@@ -44,17 +45,95 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 bg-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-bold text-gray-800">Home Appliances</h1>
-            <h2 class="text-2xl mt-4 text-gray-600">Your trusted partner for Solar Energy Providers</h2>
-            <p class="mt-6 text-gray-600">Shresht Systems provides reliable Solar Energy and advanced CCTV Security solutions. We focus on sustainability and safety.</p>
+<!-- Hero Section -->
+<section id="hero" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-green-500 p-8">
+    <div class="text-center text-white">
+        <img src="./assets/home-app-illu.svg" alt="illustration" class="mb-8 w-3/4 md:w-1/2 lg:w-1/3 shadow-lg rounded-lg">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Home Appliances</h1>
+        <p class="text-xl md:text-2xl mb-6">Innovative and Energy-Efficient Solutions for Your Home</p>
+        <a href="#home-appliances" class="bg-white text-blue-500 font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300">Explore Now</a>
+    </div>
+</section>
+
+    <!-- Home Appliances Section -->
+    <section id="home-appliances" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">Our Home Appliances</h1>
+            <p class="text-lg text-gray-600 mb-12">Explore our range of home appliances designed to make your life
+                easier and more comfortable. From energy-efficient solutions to advanced technology, we have everything
+                you need.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/ups-inverter-battery-1000x1000.jpeg" alt="UPS Inverter Battery"
+                        class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">UPS Inverter Battery</h2>
+                    <p class="text-gray-600 mt-2">Reliable power backup solutions for your home and office.</p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/ws-em-64_wround.jpg" alt="Water Purifier" class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Water Purifier</h2>
+                    <p class="text-gray-600 mt-2">Ensure clean and safe drinking water with our advanced purifiers.</p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/street light.jpeg" alt="Street Light" class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Street Light</h2>
+                    <p class="text-gray-600 mt-2">Energy-efficient street lighting solutions for urban and rural areas.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/LED-Light.jpg" alt="LED Lights" class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">LED Lights</h2>
+                    <p class="text-gray-600 mt-2">Bright and energy-saving LED lights for your home and office.</p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/solar-water-heater.jpg" alt="Solar Water Heater"
+                        class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Solar Water Heater</h2>
+                    <p class="text-gray-600 mt-2">Eco-friendly water heating solutions using solar energy.</p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./assets/air-conditioner.jpg" alt="Air Conditioner" class="rounded-lg shadow-lg mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Air Conditioner</h2>
+                    <p class="text-gray-600 mt-2">Efficient cooling solutions for your home and office.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-6">
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto text-center">
-            <p>&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">Why Choose Our Home Appliances?</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 shadow-lg rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Energy Efficiency</h2>
+                    <p class="text-gray-600">Our appliances are designed to consume less energy, helping you save on
+                        electricity bills while reducing your carbon footprint.</p>
+                </div>
+                <div class="p-6 bg-gray-100 shadow-lg rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Advanced Technology</h2>
+                    <p class="text-gray-600">We incorporate the latest technology in our appliances to ensure high
+                        performance, reliability, and ease of use.</p>
+                </div>
+                <div class="p-6 bg-gray-100 shadow-lg rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Exceptional Support</h2>
+                    <p class="text-gray-600">Our dedicated support team is always ready to assist you with any queries
+                        or issues, ensuring a seamless experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="./about.html" class="hover:underline">About</a>
+                <a href="./contact.html" class="hover:underline">Support</a>
+                <a href="./solar.html" class="hover:underline">Services</a>
+                <a href="./contact.html" class="hover:underline">Contact</a>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
         </div>
     </footer>
 
