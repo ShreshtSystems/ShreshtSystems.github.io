@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Systems - Shresht Systems</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header Section -->
+    <section id="about" class="bg-white shadow-md">
+        <header class="flex justify-between items-center p-4">
+            <!-- Logo -->
+            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
+                <img src="./assets/Shresht-Logo-Final.png" alt="logo" class="h-12">
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="./securitySystems.html" class="hover:text-blue-600">Security Systems</a></li>
+                    <li><a href="./homeAppliances.html" class="hover:text-blue-600">Home Appliances</a></li>
+                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="./about.html" class="hover:text-blue-600">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+                <span class="block h-0.5 w-6 bg-gray-600"></span>
+            </button>
+        </header>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
+            <nav class="space-y-4">
+                <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
+                <a href="./securitySystems.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
+                <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
+                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
+                <a href="./contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="solar" class="py-16 bg-white text-center">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-800">Solar Energy Systems</h1>
+            <h2 class="text-2xl mt-4 text-gray-600">Efficient and Sustainable Solutions</h2>
+            <p class="mt-6 text-gray-600">Shresht Systems offers advanced solar energy solutions to meet your energy
+                needs sustainably and efficiently. From solar panel installation to hybrid systems, we deliver quality
+                and reliability.</p>
+        </div>
+    </section>
+
+    <section class="services py-16 bg-white text-center">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Solar Services</h1>
+            <div class="space-y-16">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/solar.jpg" alt="Solar Installation" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Solar & Electrical Installation</h2>
+                        <p class="mt-4 text-gray-600">Professional installation of solar panels and electrical systems
+                            ensuring efficiency and durability.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/battery.jpg" alt="Battery Storage" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pr-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Battery Energy Storage</h2>
+                        <p class="mt-4 text-gray-600">Store solar energy for use during nighttime or power outages with
+                            advanced battery systems.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/ongrid.webp" alt="Hybrid Power Plant" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Hybrid Solar Power Plant</h2>
+                        <p class="mt-4 text-gray-600">A combination of solar and traditional energy sources for
+                            continuous power supply.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/offgrid.png" alt="Solar Grid Systems" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pr-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Off-Grid & On-Grid Solar Systems</h2>
+                        <p class="mt-4 text-gray-600">Tailored systems for both independent and grid-connected solar
+                            energy solutions.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/charger.jpg" alt="EV Charger" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Electric Vehicle Charger</h2>
+                        <p class="mt-4 text-gray-600">Eco-friendly EV chargers powered by solar energy for convenient
+                            and sustainable charging.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2">
+                        <img src="./assets/solarwaterheater.webp" alt="Solar Water Heater" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pr-8 mt-8 md:mt-0">
+                        <h2 class="text-2xl font-bold text-gray-800">Solar Water Heater</h2>
+                        <p class="mt-4 text-gray-600">Eco-friendly EV chargers powered by solar energy for convenient
+                            and sustainable charging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-16 bg-gray-100 text-center p-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Benefits Of Solar Systems</h1>
+            <ul class="list-disc list-inside text-left mx-auto max-w-3xl text-gray-600 space-y-2">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Delivers high pressure for modern bathroom fittings.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    High-density compressed PUF-insulated storage tanks retain hot water for up to 48 hours.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Advanced tubes perform efficiently even in cloudy weather.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Suitable for borewell and hard water usage.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Prevents corrosion and leakage, ensuring durability.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Optional 2KW/3KW backup heater with thermostat for continuous hot water.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Prevents bacterial and fungal buildup, ensuring water hygiene.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    Reduces energy bills and increases reliability.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="specifications" class="py-16 bg-white p-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Technical Specifications For Solar Water Heater</h1>
+            <ul class="list-disc list-inside text-left mx-auto max-w-3xl text-gray-600 space-y-2">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Type of Collector:</strong> ETC (Evacuated Tube Collector)
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Specifications:</strong> 58 - 2100 mm
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Frame Angle:</strong> 27 degrees
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Inner Tank Materials:</strong> Enamel steel with 2 mm & 2.5 mm glass coating
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Inner Dish:</strong> 2.5 mm
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Outer Dish:</strong> Aluminum with powder coating
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Insulation:</strong> 50 mm high-quality PUF materials
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600">✔</span>
+                    <strong>Outer Tank:</strong> Powder-coated or Stainless steel options
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="./about.html" class="hover:underline">About</a>
+                <a href="./contact.html" class="hover:underline">Support</a>
+                <a href="./solar.html" class="hover:underline">Services</a>
+                <a href="./contact.html" class="hover:underline">Contact</a>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
