@@ -1,239 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shresht Systems</title>
-    <link rel="icon" href="./assets/icon.png" type="image/icon type">
+    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body::-webkit-scrollbar {
-            display: none;
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Move hero content up */
+      #about .text-center {
+        margin-top: -250px;
+      }
+
+      /* Gradient overlay for hero section */
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        );
+      }
+
+      /* Smooth animations */
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .animate-slide-in-left {
+        animation: slideInLeft 1s ease-in-out;
+      }
+
+      .animate-slide-in-right {
+        animation: slideInRight 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
 
-        /* Move hero content up */
-        #about .text-center {
-            margin-top: -250px;
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
         }
 
-        /* Gradient overlay for hero section */
-        .hero-overlay {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
         }
 
-        /* Smooth animations */
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in-out;
+        to {
+          transform: translateX(0);
         }
-
-        .animate-slide-in-left {
-            animation: slideInLeft 1s ease-in-out;
-        }
-
-        .animate-slide-in-right {
-            animation: slideInRight 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideInLeft {
-            from {
-                transform: translateX(-100%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInRight {
-            from {
-                transform: translateX(100%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <section id="about" class="h-screen bg-cover bg-center flex flex-col justify-center items-center hero-overlay"
-        style="background-image: url('./assets/solar_img1.jpeg'); animation: fadeIn 1s;">
-        <!-- Navbar -->
-        <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4">
-            <div class="flex items-center">
-                <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" class="h-12 w-auto">
-            </div>
-            <nav class="hidden md:flex space-x-6">
-                <a href="./solarSystems.html" class="text-gray-600 hover:text-gray-900">Solar Systems</a>
-                <a href="./securitySystems.html" class="text-gray-600 hover:text-gray-900">Security Systems</a>
-                <a href="./homeAppliances.html" class="text-gray-600 hover:text-gray-900">Home Appliances</a>
-                <a href="./projects.html" class="text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="./about.html" class="text-gray-600 hover:text-gray-900">About Us</a>
-                <a href="./contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
-            </nav>
-            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-            </button>
-        </header>
+  <body>
+    <section
+      id="about"
+      class="h-screen bg-cover bg-center flex flex-col justify-center items-center hero-overlay"
+      style="
+        background-image: url('./assets/solar_img1.jpeg');
+        animation: fadeIn 1s;
+      "
+    >
+      <!-- Navbar -->
+      <header class="absolute top-0 left-0 w-full z-50">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+        >
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center space-x-3">
+            <img
+              src="./assets/Shresht-Logo-Final.png"
+              alt="Shresht Systems Logo"
+              class="h-10 w-auto"
+            />
+            <span class="text-lg font-semibold text-gray-800"
+              >Shresht Systems</span
+            >
+          </a>
 
-        <!-- Mobile Menu (Initially Hidden) -->
-        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
-            <nav class="space-y-4">
-                <a href="./solarSystems.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
-                <a href="./securitySystems.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
-                <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
-                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
-                <a href="./contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
-            </nav>
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-6">
+            <a
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="./solar-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Solar Systems</a
+            >
+            <a
+              href="./security-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Security Systems</a
+            >
+            <a
+              href="./home-appliances.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home Appliances</a
+            >
+            <a
+              href="./projects.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="./about.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >About Us</a
+            >
+            <a
+              href="./contact.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+          </button>
         </div>
+      </header>
 
-        <!-- Hero Content -->
-        <div class="text-center animate-fade-in text-black">
-            <h1 class="text-4xl md:text-6xl font-bold">Shresht Systems</h1>
-            <h2 class="text-xl md:text-2xl mt-4">Your Trusted Partner for Solar Energy and CCTV Solutions</h2>
-            <p class="mt-6 text-sm md:text-base">Shresht Systems provides reliable solar energy and advanced CCTV
-                security solutions. We focus on sustainability and safety.</p>
-        </div>
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div
+        id="mobile-menu"
+        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
+      >
+        <nav class="space-y-4">
+          <a
+            href="./index.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home</a
+          >
+          <a
+            href="./solar-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Solar Systems</a
+          >
+          <a
+            href="./security-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Security Systems</a
+          >
+          <a
+            href="./home-appliances.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home Appliances</a
+          >
+          <a
+            href="./projects.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a
+            href="./about.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >About Us</a
+          >
+          <a
+            href="./contact.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="text-center animate-fade-in text-black">
+        <h1 class="text-4xl md:text-6xl font-bold">Shresht Systems</h1>
+        <h2 class="text-xl md:text-2xl mt-4">
+          Your Trusted Partner for Solar Energy and CCTV Solutions
+        </h2>
+        <p class="mt-6 text-sm md:text-base">
+          Shresht Systems provides reliable solar energy and advanced CCTV
+          security solutions. We focus on sustainability and safety.
+        </p>
+      </div>
     </section>
 
     <!-- Solar Section -->
-    <section id="solar" class="h-screen flex flex-col md:flex-row items-center justify-evenly p-4 bg-white">
-        <div class="md:w-1/2 animate-slide-in-left">
-            <img src="./assets/solar_img2.jpg" alt="Solar Energy System" class="rounded-lg shadow-lg">
-        </div>
-        <div class="md:w-1/2 flex flex-col items-center text-center md:text-left space-y-4 animate-slide-in-right">
-            <h1 class="text-3xl font-bold text-gray-800">Solar Energy Systems</h1>
-            <p class="text-gray-600">Reduce your carbon footprint and energy costs with our state-of-the-art solar
-                energy solutions. Our team of experts will design and install a system tailored to your specific needs.
-            </p>
-            <a href="./solarSystems.html"
-                class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-transform transform hover:scale-105">Learn
-                More</a>
-        </div>
+    <section
+      id="solar"
+      class="min-h-screen bg-white flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-16"
+    >
+      <div class="md:w-1/2 animate-slide-in-left">
+        <img
+          src="./assets/solar_img2.jpg"
+          alt="Solar Energy System"
+          class="rounded-xl shadow-xl w-full object-cover"
+        />
+      </div>
+      <div
+        class="md:w-1/2 text-center md:text-left space-y-6 animate-slide-in-right"
+      >
+        <h2 class="text-4xl font-bold text-gray-900">Solar Energy Systems</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Reduce your carbon footprint and energy costs with our
+          state-of-the-art solar energy solutions. Our team designs and installs
+          systems tailored to your needs.
+        </p>
+        <a
+          href="./solar-systems.html"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
+        >
+          Learn More
+        </a>
+      </div>
     </section>
 
     <!-- Security Section -->
-    <section id="cctv" class="h-screen flex flex-col md:flex-row-reverse items-center justify-evenly p-4 bg-gray-50">
-        <div class="md:w-1/2 animate-slide-in-right">
-            <img src="./assets/cctv_img1.avif" alt="CCTV Security System" class="rounded-lg shadow-lg">
-        </div>
-        <div class="md:w-1/2 flex flex-col items-center text-center md:text-left space-y-4 animate-slide-in-left">
-            <h1 class="text-3xl font-bold text-gray-800">Security Systems</h1>
-            <p class="text-gray-600">Ensure the safety and security of your property with our advanced CCTV systems. Our
-                high-quality cameras and intelligent video analytics provide comprehensive surveillance and monitoring.
-            </p>
-            <a href="./securitySystems.html"
-                class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-transform transform hover:scale-105">Learn
-                More</a>
-        </div>
+    <section
+      id="cctv"
+      class="min-h-screen bg-gray-50 flex flex-col md:flex-row-reverse items-center justify-between gap-10 px-6 py-16"
+    >
+      <div class="md:w-1/2 animate-slide-in-right">
+        <img
+          src="./assets/cctv_img1.avif"
+          alt="CCTV Security System"
+          class="rounded-xl shadow-xl w-full object-cover"
+        />
+      </div>
+      <div
+        class="md:w-1/2 text-center md:text-right space-y-6 animate-slide-in-left"
+      >
+        <h2 class="text-4xl font-bold text-gray-900">Security Systems</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Ensure your property&apos;s safety with our advanced CCTV systems. Our
+          high-quality cameras and intelligent analytics offer full-scale
+          surveillance and protection.
+        </p>
+        <a
+          href="./security-systems.html"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
+        >
+          Learn More
+        </a>
+      </div>
     </section>
 
     <!-- Home Appliances Section -->
-    <section id="home-appliances" class="py-16 bg-gray-100">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-4xl font-bold text-gray-800 mb-8">Home Appliances</h1>
-            <p class="text-lg text-gray-600 mb-12">Explore our range of home appliances designed to make your life
-                easier and more comfortable. From energy-efficient solutions to advanced technology, we have everything
-                you need.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/solarwaterheater.webp" alt="Solar Water Heater"
-                        class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Solar Water Heater</h2>
-                    <p class="text-gray-600 mt-2">Eco-friendly water heating solutions using solar energy.</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/automated gates.jpg" alt="Automated Gates" class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Automated Gates</h2>
-                    <p class="text-gray-600 mt-2">Advanced automated gate solutions for enhanced security.</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/street light.jpeg" alt="Street Light" class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Street Light</h2>
-                    <p class="text-gray-600 mt-2">Energy-efficient street lighting solutions for urban and rural areas.
-                    </p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/ws-em-64_wround.jpg" alt="Water Softeners and Purifiers"
-                        class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Water Softeners and Purifiers</h2>
-                    <p class="text-gray-600 mt-2">Ensure clean and safe drinking water with our advanced purifiers.</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/ups-inverter-battery-1000x1000.jpeg" alt="UPS and Inverter Battery"
-                        class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">UPS and Inverter Battery</h2>
-                    <p class="text-gray-600 mt-2">Reliable power backup solutions for your home and office.</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./assets/LED lights.jpg" alt="LED Lights" class="rounded-lg shadow-lg mb-4">
-                    <h2 class="text-xl font-semibold text-gray-800">LED Lights</h2>
-                    <p class="text-gray-600 mt-2">Bright and energy-saving LED lights for your home and office.</p>
-                </div>
-            </div>
-            <a href="./homeAppliances.html"
-                class="mt-12 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-transform transform hover:scale-105">Learn
-                More</a>
+    <section id="home-appliances" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Home Appliances</h2>
+        <p class="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+          Explore appliances built for convenience, efficiency, and comfort.
+          From solar-powered devices to smart technology, we offer modern
+          solutions for your home.
+        </p>
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Solar Water Heater -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/solarwaterheater.webp"
+              alt="Solar Water Heater"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">
+              Solar Water Heater
+            </h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Eco-friendly water heating solutions using solar energy.
+            </p>
+          </div>
+
+          <!-- Automated Gates -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/automated gates.jpg"
+              alt="Automated Gates"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">Automated Gates</h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Advanced automated gate solutions for enhanced security.
+            </p>
+          </div>
+
+          <!-- Street Light -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/street light.jpeg"
+              alt="Street Light"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">Street Light</h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Energy-efficient street lighting solutions for urban and rural
+              areas.
+            </p>
+          </div>
+
+          <!-- Water Softeners and Purifiers -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/ws-em-64_wround.jpg"
+              alt="Water Softeners and Purifiers"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">
+              Water Softeners and Purifiers
+            </h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Ensure clean and safe drinking water with our advanced purifiers.
+            </p>
+          </div>
+
+          <!-- UPS and Inverter Battery -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/ups-inverter-battery-1000x1000.jpeg"
+              alt="UPS and Inverter Battery"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">
+              UPS and Inverter Battery
+            </h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Reliable power backup solutions for your home and office.
+            </p>
+          </div>
+
+          <!-- LED Lights -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
+          >
+            <img
+              src="./assets/LED lights.jpg"
+              alt="LED Lights"
+              class="rounded-lg mb-4 w-full h-48 object-cover"
+            />
+            <h3 class="text-xl font-semibold text-gray-900">LED Lights</h3>
+            <p class="text-gray-600 mt-2 flex-grow">
+              Bright and energy-saving LED lights for your home and office.
+            </p>
+          </div>
         </div>
+        <a
+          href="./home-appliances.html"
+          class="mt-12 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
+        >
+          Learn More
+        </a>
+      </div>
     </section>
 
     <!-- Quality, Experience, Support Section -->
-    <section id="info" class="py-16 bg-gray-100">
-        <div class="max-w-7xl mx-auto grid gap-8 md:grid-cols-3">
-            <div class="p-6 bg-white shadow-lg w-auto rounded-lg animate-fade-in">
-                <h1 class="text-2xl font-semibold mb-4">Quality Products & Customer Service</h1>
-                <p>Shresht Systems' goal and promise is to provide industry-standard products at cost-effective pricing,
-                    along with quality service to ensure optimal product performance.</p>
-            </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg animate-fade-in">
-                <h1 class="text-2xl font-semibold mb-4">International Experience</h1>
-                <p>Shresht Systems' management includes multinational, industry-experienced professionals. Our
-                    manufacturing units follow standardized processes and procedures according to company policy.</p>
-            </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg animate-fade-in">
-                <h1 class="text-2xl font-semibold mb-4">Regional Sales & Support</h1>
-                <p>Shresht Systems has pan-India sales and service operations through authorized channel partners,
-                    ensuring easy access and timely support for proposal submissions and product performance.</p>
-            </div>
+    <section id="info" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4">
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            Quality Products & Service
+          </h3>
+          <p class="text-gray-700">
+            We deliver industry-standard products with quality service and
+            pricing to ensure long-term performance and satisfaction.
+          </p>
         </div>
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            International Experience
+          </h3>
+          <p class="text-gray-700">
+            Our management includes industry veterans with global experience.
+            Our production follows strict, standardized procedures.
+          </p>
+        </div>
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">
+            Nationwide Support
+          </h3>
+          <p class="text-gray-700">
+            We operate pan-India through authorized partners, ensuring quick
+            proposals, installations, and service wherever you are.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="flex space-x-4">
-                <a href="./about.html" class="hover:underline">About</a>
-                <a href="./contact.html" class="hover:underline">Support</a>
-                <a href="./solarSystems.html" class="hover:underline">Services</a>
-                <a href="./contact.html" class="hover:underline">Contact</a>
-            </div>
-            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-gray-300 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+        >
+          <!-- Navigation Links -->
+          <div class="flex flex-wrap items-center gap-6 text-sm">
+            <a href="./about.html" class="hover:text-white transition"
+              >About Us</a
+            >
+            <a href="./solar-systems.html" class="hover:text-white transition"
+              >Services</a
+            >
+            <a href="./contact.html" class="hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <p class="text-sm text-gray-400">
+            &copy; 2025
+            <span class="text-white font-medium">Shresht Systems</span>. All
+            rights reserved.
+          </p>
         </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        const hamburger = document.getElementById("hamburger");
-        const mobileMenu = document.getElementById("mobile-menu");
-        hamburger.addEventListener("click", () => {
-            mobileMenu?.classList.toggle("hidden");
-        });
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>
