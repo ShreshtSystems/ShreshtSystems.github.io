@@ -1,100 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Shresht Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body class="font-sans bg-gray-50 text-gray-900 h-screen flex flex-col justify-between">
+  <body class="font-sans text-gray-900 flex flex-col min-h-dvh">
     <!-- Header Section -->
-    <section id="about" class="bg-white shadow-md">
-        <header class="flex justify-between items-center p-4">
-            <!-- Logo -->
-            <div class="logo cursor-pointer" onclick="window.location='./index.html'">
-                <img src="./assets/Shresht-Logo-Final.png" alt="logo" class="h-12">
-            </div>
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-8">
-                <ul class="flex space-x-6">
-                    <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
-                    <li><a href="./solarSystems.html" class="hover:text-blue-600">Solar Systems</a></li>
-                    <li><a href="./securitySystems.html" class="hover:text-blue-600">Security Systems</a></li>
-                    <li><a href="./homeAppliances.html" class="hover:text-blue-600">Home Appliances</a></li>
-                    <li><a href="./projects.html" class="hover:text-blue-600">Projects</a></li>
-                    <li><a href="./about.html" class="hover:text-blue-600">About Us</a></li>
-                </ul>
-            </nav>
-            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-                <span class="block h-0.5 w-6 bg-gray-600"></span>
-            </button>
-        </header>
-        <!-- Mobile Menu (Initially Hidden) -->
-        <div id="mobile-menu" class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden">
-            <nav class="space-y-4">
-                <a href="./index.html" class="block text-gray-600 hover:text-gray-900">Home</a>
-                <a href="./solarSystems.html" class="block text-gray-600 hover:text-gray-900">Solar Systems</a>
-                <a href="./securitySystems.html" class="block text-gray-600 hover:text-gray-900">Security Systems</a>
-                <a href="./homeAppliances.html" class="block text-gray-600 hover:text-gray-900">Home Appliances</a>
-                <a href="./projects.html" class="block text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="./about.html" class="block text-gray-600 hover:text-gray-900">About Us</a>
-            </nav>
+    <section id="about" class="bg-white">
+      <header class="bg-white">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+        >
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center space-x-3">
+            <img
+              src="./assets/Shresht-Logo-Final.png"
+              alt="Shresht Systems Logo"
+              class="h-10 w-auto"
+            />
+            <span class="text-lg font-semibold text-gray-800"
+              >Shresht Systems</span
+            >
+          </a>
+  
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-6">
+            <a
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="./solar-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Solar Systems</a
+            >
+            <a
+              href="./security-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Security Systems</a
+            >
+            <a
+              href="./home-appliances.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home Appliances</a
+            >
+            <a
+              href="./projects.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="./about.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >About Us</a
+            >
+            <a
+              href="./contact.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </nav>
+  
+          <!-- Mobile Hamburger Button -->
+          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+          </button>
         </div>
+      </header>
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div
+        id="mobile-menu"
+        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
+      >
+        <nav class="space-y-4">
+          <a
+            href="./index.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home</a
+          >
+          <a
+            href="./solar-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Solar Systems</a
+          >
+          <a
+            href="./security-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Security Systems</a
+          >
+          <a
+            href="./home-appliances.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home Appliances</a
+          >
+          <a
+            href="./projects.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a
+            href="./about.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >About Us</a
+          >
+          <a
+            href="./contact.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 bg-white">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Get in Touch</h1>
-        <div class="container max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Address -->
-            <div class="csub flex items-center space-x-4">
-                <div class="img">
-                    <img src="./assets/location-pin.png" alt="icon" class="h-8 w-8">
-                </div>
-                <p class="text-lg text-gray-600">Harshitha Building, Onthibettu, Udupi District - 576113</p>
+    <section id="contact" class="bg-white py-12 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+        <p class="text-lg text-gray-600 mb-16">
+          We'd love to hear from you. Reach out via phone, email, or drop by our
+          office.
+        </p>
+
+        <!-- Contact Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <!-- Address -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4 text-blue-600">
+              <!-- MapPin Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-map-pin-icon lucide-map-pin"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
             </div>
-            <!-- Phone Numbers -->
-            <div class="csub flex items-center space-x-4">
-                <div class="img">
-                    <img src="./assets/telephone.png" alt="icon" class="h-8 w-8">
-                </div>
-                <p class="text-lg text-gray-600">Phone: <a href="tel:+917204657707" class="text-blue-600">7204657707</a>, <a href="tel:+919901730305" class="text-blue-600">9901730305</a></p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
+            <p class="text-gray-700 leading-relaxed max-w-xs">
+              Harshitha Building, Onthibettu,<br />
+              Udupi District - 576113
+            </p>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4 text-blue-600">
+              <!-- Phone Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-phone-icon lucide-phone"
+              >
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                />
+              </svg>
             </div>
-            <!-- Email -->
-            <div class="csub flex items-center space-x-4">
-                <div class="img">
-                    <img src="./assets/email.png" alt="icon" class="h-8 w-8">
-                </div>
-                <p class="text-lg text-gray-600">Email: <a href="mailto:shreshtsystems@gmail.com" class="text-blue-600">shreshtsystems@gmail.com</a></p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
+            <p class="text-gray-700">
+              <a
+                href="tel:+917204657707"
+                class="block text-blue-600 hover:underline"
+                >7204657707</a
+              >
+              <a
+                href="tel:+919901730305"
+                class="block text-blue-600 hover:underline"
+                >9901730305</a
+              >
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4 text-blue-600">
+              <!-- Mail Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
             </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
+            <p class="text-gray-700">
+              <a
+                href="mailto:shreshtsystems@gmail.com"
+                class="text-blue-600 hover:underline"
+              >
+                shreshtsystems@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="flex space-x-4">
-                <a href="./about.html" class="hover:underline">About</a>
-                <a href="./contact.html" class="hover:underline">Support</a>
-                <a href="./solarSystems.html" class="hover:underline">Services</a>
-                <a href="./contact.html" class="hover:underline">Contact</a>
-            </div>
-            <p class="mt-4 md:mt-0">&copy; 2024 Shresht Systems. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+        >
+          <!-- Navigation Links -->
+          <div class="flex flex-wrap items-center gap-6 text-sm">
+            <a href="./about.html" class="hover:text-white transition"
+              >About Us</a
+            >
+            <a href="./solar-systems.html" class="hover:text-white transition"
+              >Services</a
+            >
+            <a href="./contact.html" class="hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <p class="text-sm text-gray-400">
+            &copy; 2025
+            <span class="text-white font-medium">Shresht Systems</span>. All
+            rights reserved.
+          </p>
         </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        const hamburger = document.getElementById("hamburger");
-        const mobileMenu = document.getElementById("mobile-menu");
-        hamburger.addEventListener("click", () => {
-            mobileMenu?.classList.toggle("hidden");
-        });
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>

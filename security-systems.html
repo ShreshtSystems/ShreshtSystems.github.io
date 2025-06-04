@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shresht Systems - Security Systems</title>
+    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+    <section class="bg-white shadow-md">
+      <header class="bg-white">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+        >
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center space-x-3">
+            <img
+              src="./assets/Shresht-Logo-Final.png"
+              alt="Shresht Systems Logo"
+              class="h-10 w-auto"
+            />
+            <span class="text-lg font-semibold text-gray-800"
+              >Shresht Systems</span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-6">
+            <a
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="./solar-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Solar Systems</a
+            >
+            <a
+              href="./security-systems.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Security Systems</a
+            >
+            <a
+              href="./home-appliances.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home Appliances</a
+            >
+            <a
+              href="./projects.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="./about.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >About Us</a
+            >
+            <a
+              href="./contact.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+            <span class="block h-0.5 w-6 bg-gray-700"></span>
+          </button>
+        </div>
+      </header>
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div
+        id="mobile-menu"
+        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
+      >
+        <nav class="space-y-4">
+          <a
+            href="./index.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home</a
+          >
+          <a
+            href="./solar-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Solar Systems</a
+          >
+          <a
+            href="./security-systems.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Security Systems</a
+          >
+          <a
+            href="./home-appliances.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Home Appliances</a
+          >
+          <a
+            href="./projects.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a
+            href="./about.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >About Us</a
+          >
+          <a
+            href="./contact.html"
+            class="block text-gray-700 hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl font-extrabold text-gray-800">Security Systems</h1>
+        <h2 class="text-2xl mt-4 text-gray-600">
+          High-Quality Security Solutions for Your Home and Business
+        </h2>
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+          At Shresht Systems, we offer reliable and professional services to
+          ensure the safety and automation of your premises with cutting-edge
+          technology.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Security Services -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Our Security Services
+        </h1>
+        <div class="space-y-20">
+          <!-- Service Block -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/dome-camera.jpg"
+                alt="Dome Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl font-bold text-gray-800">Dome Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                High-quality dome cameras for comprehensive surveillance
+                coverage.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/bullet_camera.jpg"
+                alt="Bullet Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-right">
+              <h2 class="text-2xl font-bold text-gray-800">Bullet Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                Durable bullet cameras for long-range outdoor surveillance.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/HD camera.avif"
+                alt="HD Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl font-bold text-gray-800">HD Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                High-definition cameras for crystal clear video quality.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/IP camera.jpeg"
+                alt="IP Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-right">
+              <h2 class="text-2xl font-bold text-gray-800">IP Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                Advanced IP cameras for network-based surveillance.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/solar camera.jpeg"
+                alt="Solar Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl font-bold text-gray-800">Solar Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                Eco-friendly solar-powered cameras for sustainable surveillance.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/wifi camera.jpg"
+                alt="WiFi Camera"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-right">
+              <h2 class="text-2xl font-bold text-gray-800">WiFi Cameras</h2>
+              <p class="mt-4 text-gray-600">
+                Convenient WiFi cameras for easy installation and remote access.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/biometric.png"
+                alt="Biometric Security"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl font-bold text-gray-800">
+                Biometric Security
+              </h2>
+              <p class="mt-4 text-gray-600">
+                Advanced biometric security systems for enhanced access control.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="./assets/alarm systems.jpg"
+                alt="Alarm Systems"
+                class="rounded-lg w-full max-w-md mx-auto shadow-md"
+              />
+            </div>
+            <div class="md:w-1/2 text-center md:text-right">
+              <h2 class="text-2xl font-bold text-gray-800">Alarm Systems</h2>
+              <p class="mt-4 text-gray-600">
+                Reliable alarm systems for comprehensive security coverage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Services -->
+    <section id="services" class="py-20 bg-white text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">
+          Our Professional Services
+        </h2>
+        <ul
+          class="list-none list-disc text-left mx-2 md:mx-[10%] lg:mx-[20%] text-lg text-gray-600 space-y-4"
+        >
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> CCTV Camera & Alarm
+            Systems
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Intercom Systems
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Home & Business
+            Automation
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Installation &
+            Maintenance
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Free Telephone Tech
+            Support
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Qualified CCTV
+            Installers
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">
+          Advanced Tech Features
+        </h2>
+        <ul
+          class="list-none list-disc text-left mx-2 md:mx-[10%] lg:mx-[20%] text-lg text-gray-600 space-y-4"
+        >
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Infrared Detection
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Night Vision
+            Technology
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> High-Definition
+            Resolution
+          </li>
+          <li>
+            <span class="text-blue-600 font-bold">✔</span> Off-Site Monitoring
+            and Control
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+        >
+          <!-- Navigation Links -->
+          <div class="flex flex-wrap items-center gap-6 text-sm">
+            <a href="./about.html" class="hover:text-white transition"
+              >About Us</a
+            >
+            <a href="./solar-systems.html" class="hover:text-white transition"
+              >Services</a
+            >
+            <a href="./contact.html" class="hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <p class="text-sm text-gray-400">
+            &copy; 2025
+            <span class="text-white font-medium">Shresht Systems</span>. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
