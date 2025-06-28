@@ -85,15 +85,12 @@
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
         >
           <!-- Logo -->
-          <a href="./index.html" class="flex items-center space-x-3">
+          <a href="./index.html">
             <img
-              src="./assets/Shresht-Logo-Final.png"
+              src="./assets/logo.png"
               alt="Shresht Systems Logo"
-              class="h-10 w-auto"
+              class="h-12 w-auto"
             />
-            <span class="text-lg font-semibold text-gray-800"
-              >Shresht Systems</span
-            >
           </a>
 
           <!-- Desktop Navigation -->
@@ -204,20 +201,22 @@
     <!-- Solar Section -->
     <section
       id="solar"
-      class="min-h-screen bg-white flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-16"
+      class="min-h-screen bg-white flex flex-col md:flex-row items-center lg:justify-between gap-6 md:gap-10 px-4 sm:px-6 py-10 sm:py-16"
     >
-      <div class="md:w-1/2 animate-slide-in-left">
+      <div class="md:w-1/2 animate-slide-in-left flex justify-center">
         <img
           src="./assets/solar_img2.jpg"
           alt="Solar Energy System"
-          class="rounded-xl shadow-xl w-full object-cover"
+          class="rounded-xl shadow-xl w-full max-w-sm sm:max-w-md md:max-w-lg object-cover h-auto"
         />
       </div>
       <div
-        class="md:w-1/2 text-center md:text-left space-y-6 animate-slide-in-right"
+        class="md:w-1/2 text-center md:text-left space-y-4 sm:space-y-6 animate-slide-in-right"
       >
-        <h2 class="text-4xl font-bold text-gray-900">Solar Energy Systems</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+          Solar Energy Systems
+        </h2>
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
           Reduce your carbon footprint and energy costs with our
           state-of-the-art solar energy solutions. Our team designs and installs
           systems tailored to your needs.
@@ -234,21 +233,23 @@
     <!-- Security Section -->
     <section
       id="cctv"
-      class="min-h-screen bg-gray-50 flex flex-col md:flex-row-reverse items-center justify-between gap-10 px-6 py-16"
+      class="min-h-screen bg-gray-50 flex flex-col md:flex-row-reverse items-center lg:justify-between gap-6 md:gap-10 px-4 sm:px-6 py-10 sm:py-16"
     >
-      <div class="md:w-1/2 animate-slide-in-right">
+      <div class="md:w-1/2 animate-slide-in-right flex justify-center">
         <img
           src="./assets/cctv_img1.avif"
           alt="CCTV Security System"
-          class="rounded-xl shadow-xl w-full object-cover"
+          class="rounded-xl shadow-xl w-full max-w-sm sm:max-w-md md:max-w-lg object-cover h-auto"
         />
       </div>
       <div
-        class="md:w-1/2 text-center md:text-right space-y-6 animate-slide-in-left"
+        class="md:w-1/2 text-center md:text-right space-y-4 sm:space-y-6 animate-slide-in-left"
       >
-        <h2 class="text-4xl font-bold text-gray-900">Security Systems</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          Ensure your property&apos;s safety with our advanced CCTV systems. Our
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+          Security Systems
+        </h2>
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+          Ensure your property's safety with our advanced CCTV systems. Our
           high-quality cameras and intelligent analytics offer full-scale
           surveillance and protection.
         </p>
@@ -420,10 +421,12 @@
     <footer class="bg-gray-900 text-gray-300 py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
         >
-          <!-- Navigation Links -->
-          <div class="flex flex-wrap items-center gap-6 text-sm">
+          <!-- Left: Navigation Links -->
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm"
+          >
             <a href="./about.html" class="hover:text-white transition"
               >About Us</a
             >
@@ -435,12 +438,32 @@
             >
           </div>
 
-          <!-- Copyright -->
-          <p class="text-sm text-gray-400">
+          <!-- Center: Author Info -->
+          <div class="text-sm text-gray-400 text-left md:text-center">
+            <p class="leading-relaxed">
+              Website by
+              <a
+                href="https://jithesh.vercel.app/"
+                target="_blank"
+                class="text-white font-medium hover:underline"
+                >Jithesh</a
+              >
+              &amp;
+              <a
+                href="https://mayurapatkar.github.io/"
+                target="_blank"
+                class="text-white font-medium hover:underline"
+                >Mayur</a
+              >
+            </p>
+          </div>
+
+          <!-- Right: Copyright -->
+          <div class="text-sm text-gray-500 text-left md:text-right">
             &copy; 2025
             <span class="text-white font-medium">Shresht Systems</span>. All
             rights reserved.
-          </p>
+          </div>
         </div>
       </div>
     </footer>
