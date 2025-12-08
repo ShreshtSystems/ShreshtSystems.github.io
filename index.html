@@ -3,453 +3,428 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shresht Systems</title>
-    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* Move hero content up */
-      #about .text-center {
-        margin-top: -250px;
-      }
-
-      /* Gradient overlay for hero section */
-      .hero-overlay {
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        );
-      }
-
-      /* Smooth animations */
-      .animate-fade-in {
-        animation: fadeIn 1s ease-in-out;
-      }
-
-      .animate-slide-in-left {
-        animation: slideInLeft 1s ease-in-out;
-      }
-
-      .animate-slide-in-right {
-        animation: slideInRight 1s ease-in-out;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes slideInLeft {
-        from {
-          transform: translateX(-100%);
-        }
-
-        to {
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes slideInRight {
-        from {
-          transform: translateX(100%);
-        }
-
-        to {
-          transform: translateX(0);
-        }
-      }
-    </style>
+    <meta name="description" content="Shresht Systems - Your trusted partner for Solar Energy, CCTV Security, and Home Appliance solutions in Udupi, Karnataka." />
+    <title>Shresht Systems - Solar & Security Solutions</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
 
   <body>
-    <section
-      id="about"
-      class="h-screen bg-cover bg-center flex flex-col justify-center items-center hero-overlay"
-      style="
-        background-image: url('./assets/solar_img1.jpeg');
-        animation: fadeIn 1s;
-      "
-    >
-      <!-- Navbar -->
-      <header class="absolute top-0 left-0 w-full z-50">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-        >
-          <!-- Logo -->
-          <a href="./index.html" class="flex items-center space-x-3">
-            <img
-              src="./assets/Shresht-Logo-Final.png"
-              alt="Shresht Systems Logo"
-              class="h-10 w-auto"
-            />
-            <span class="text-lg font-semibold text-gray-800"
-              >Shresht Systems</span
-            >
-          </a>
-          <!-- Desktop Navigation -->
-          <nav class="hidden md:flex space-x-6">
-            <a
-              href="./index.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home</a
-            >
-            <a
-              href="./solar-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Solar Systems</a
-            >
-            <a
-              href="./security-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Security Systems</a
-            >
-            <a
-              href="./home-appliances.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home Appliances</a
-            >
-            <a
-              href="./projects.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Projects</a
-            >
-            <a
-              href="./about.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >About Us</a
-            >
-            <a
-              href="./contact.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Contact</a
-            >
-          </nav>
-
-          <!-- Mobile Hamburger Button -->
-          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-          </button>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="./index.html" class="navbar-logo">
+          <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" />
+          <span>Shresht Systems</span>
+        </a>
+        
+        <div class="navbar-menu">
+          <a href="./index.html" class="navbar-link active">Home</a>
+          <a href="./solar-systems.html" class="navbar-link">Solar Systems</a>
+          <a href="./security-systems.html" class="navbar-link">Security</a>
+          <a href="./home-appliances.html" class="navbar-link">Appliances</a>
+          <a href="./projects.html" class="navbar-link">Projects</a>
+          <a href="./about.html" class="navbar-link">About</a>
+          <a href="./contact.html" class="navbar-cta">Contact Us</a>
         </div>
-      </header>
-
-      <!-- Mobile Menu (Initially Hidden) -->
-      <div
-        id="mobile-menu"
-        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
-      >
-        <nav class="space-y-4">
-          <a
-            href="./index.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home</a
-          >
-          <a
-            href="./solar-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Solar Systems</a
-          >
-          <a
-            href="./security-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Security Systems</a
-          >
-          <a
-            href="./home-appliances.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home Appliances</a
-          >
-          <a
-            href="./projects.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Projects</a
-          >
-          <a
-            href="./about.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >About Us</a
-          >
-          <a
-            href="./contact.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Contact</a
-          >
-        </nav>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./solar-systems.html">Solar Systems</a>
+      <a href="./security-systems.html">Security Systems</a>
+      <a href="./home-appliances.html">Home Appliances</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
-      <!-- Hero Content -->
-      <div class="text-center animate-fade-in text-black">
-        <h1 class="text-4xl md:text-6xl font-bold">Shresht Systems</h1>
-        <h2 class="text-xl md:text-2xl mt-4">
-          Your Trusted Partner for Solar Energy and CCTV Solutions
-        </h2>
-        <p class="mt-6 text-sm md:text-base">
-          Shresht Systems provides reliable solar energy and advanced CCTV
-          security solutions. We focus on sustainability and safety.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg" style="background-image: url('./assets/solar_img1.jpeg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">🌱 Sustainable Solutions for a Better Tomorrow</span>
+        <h1 class="hero-title">Powering Homes with <span>Solar Energy</span> & Smart Security</h1>
+        <p class="hero-subtitle">Transform your home with cutting-edge solar systems, advanced CCTV solutions, and energy-efficient appliances. Your trusted partner in Udupi for a sustainable future.</p>
+        <div class="hero-buttons">
+          <a href="./solar-systems.html" class="btn btn-primary">Explore Solar Solutions</a>
+          <a href="./contact.html" class="btn btn-secondary">Get Free Quote</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-indicator"></div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item fade-in delay-1">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item fade-in delay-2">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item fade-in delay-3">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Available</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Solar Section -->
-    <section
-      id="solar"
-      class="min-h-screen bg-white flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-16"
-    >
-      <div class="md:w-1/2 animate-slide-in-left">
-        <img
-          src="./assets/solar_img2.jpg"
-          alt="Solar Energy System"
-          class="rounded-xl shadow-xl w-full object-cover"
-        />
-      </div>
-      <div
-        class="md:w-1/2 text-center md:text-left space-y-6 animate-slide-in-right"
-      >
-        <h2 class="text-4xl font-bold text-gray-900">Solar Energy Systems</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          Reduce your carbon footprint and energy costs with our
-          state-of-the-art solar energy solutions. Our team designs and installs
-          systems tailored to your needs.
-        </p>
-        <a
-          href="./solar-systems.html"
-          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
-        >
-          Learn More
-        </a>
+    <section class="section">
+      <div class="container">
+        <div class="service-block fade-in">
+          <div class="service-image slide-left">
+            <img src="./assets/solar_img2.jpg" alt="Solar Energy System Installation" />
+          </div>
+          <div class="service-content slide-right">
+            <span class="section-badge">Solar Energy</span>
+            <h2 class="service-title">Harness the Power of the Sun</h2>
+            <p class="service-text">Reduce your carbon footprint and slash energy bills with our state-of-the-art solar energy solutions. Our expert team designs and installs customized systems that maximize efficiency and savings for your home or business.</p>
+            <ul style="list-style: none; margin-bottom: 1.5rem;">
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                Rooftop Solar Panel Installation
+              </li>
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                Battery Energy Storage Systems
+              </li>
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                On-Grid & Off-Grid Solutions
+              </li>
+            </ul>
+            <a href="./solar-systems.html" class="btn btn-primary">Learn More →</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Security Section -->
-    <section
-      id="cctv"
-      class="min-h-screen bg-gray-50 flex flex-col md:flex-row-reverse items-center justify-between gap-10 px-6 py-16"
-    >
-      <div class="md:w-1/2 animate-slide-in-right">
-        <img
-          src="./assets/cctv_img1.avif"
-          alt="CCTV Security System"
-          class="rounded-xl shadow-xl w-full object-cover"
-        />
-      </div>
-      <div
-        class="md:w-1/2 text-center md:text-right space-y-6 animate-slide-in-left"
-      >
-        <h2 class="text-4xl font-bold text-gray-900">Security Systems</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          Ensure your property&apos;s safety with our advanced CCTV systems. Our
-          high-quality cameras and intelligent analytics offer full-scale
-          surveillance and protection.
-        </p>
-        <a
-          href="./security-systems.html"
-          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
-        >
-          Learn More
-        </a>
+    <section class="section section-gray">
+      <div class="container">
+        <div class="service-block fade-in">
+          <div class="service-image slide-right">
+            <img src="./assets/cctv_img1.avif" alt="CCTV Security System" />
+          </div>
+          <div class="service-content slide-left">
+            <span class="section-badge">Security Systems</span>
+            <h2 class="service-title">Protect What Matters Most</h2>
+            <p class="service-text">Ensure complete safety for your property with our advanced CCTV surveillance systems. We offer high-quality cameras with intelligent analytics, providing 24/7 monitoring and peace of mind.</p>
+            <ul style="list-style: none; margin-bottom: 1.5rem;">
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                HD & IP Camera Solutions
+              </li>
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                Dome & Bullet Cameras
+              </li>
+              <li style="padding: 0.5rem 0; color: var(--gray-700); display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                Biometric & Access Control
+              </li>
+            </ul>
+            <a href="./security-systems.html" class="btn btn-primary">Learn More →</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Home Appliances Section -->
-    <section id="home-appliances" class="py-20 bg-gray-100">
-      <div class="max-w-7xl mx-auto text-center px-4">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Home Appliances</h2>
-        <p class="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
-          Explore appliances built for convenience, efficiency, and comfort.
-          From solar-powered devices to smart technology, we offer modern
-          solutions for your home.
-        </p>
-        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Solar Water Heater -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/solarwaterheater.webp"
-              alt="Solar Water Heater"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">
-              Solar Water Heater
-            </h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Eco-friendly water heating solutions using solar energy.
-            </p>
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-badge">Home Appliances</span>
+          <h2 class="section-title">Smart & Energy-Efficient Products</h2>
+          <p class="section-subtitle">Explore our range of eco-friendly appliances designed to make your life easier, comfortable, and more sustainable.</p>
+        </div>
+        
+        <div class="product-grid">
+          <div class="product-card fade-in delay-1">
+            <div class="product-image">
+              <img src="./assets/solarwaterheater.webp" alt="Solar Water Heater" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Solar Water Heater</h3>
+              <p class="product-text">Eco-friendly water heating solutions powered by solar energy for your home.</p>
+            </div>
           </div>
-
-          <!-- Automated Gates -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/automated gates.jpg"
-              alt="Automated Gates"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">Automated Gates</h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Advanced automated gate solutions for enhanced security.
-            </p>
+          
+          <div class="product-card fade-in delay-2">
+            <div class="product-image">
+              <img src="./assets/automated gates.jpg" alt="Automated Gates" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Automated Gates</h3>
+              <p class="product-text">Advanced automated gate solutions for enhanced security and convenience.</p>
+            </div>
           </div>
-
-          <!-- Street Light -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/street light.jpeg"
-              alt="Street Light"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">Street Light</h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Energy-efficient street lighting solutions for urban and rural
-              areas.
-            </p>
+          
+          <div class="product-card fade-in delay-3">
+            <div class="product-image">
+              <img src="./assets/street light.jpeg" alt="Street Light" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Solar Street Lights</h3>
+              <p class="product-text">Energy-efficient solar lighting solutions for urban and rural areas.</p>
+            </div>
           </div>
-
-          <!-- Water Softeners and Purifiers -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/ws-em-64_wround.jpg"
-              alt="Water Softeners and Purifiers"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">
-              Water Softeners and Purifiers
-            </h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Ensure clean and safe drinking water with our advanced purifiers.
-            </p>
+          
+          <div class="product-card fade-in delay-4">
+            <div class="product-image">
+              <img src="./assets/ws-em-64_wround.jpg" alt="Water Purifiers" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Water Purifiers</h3>
+              <p class="product-text">Advanced water softeners and purifiers for clean, safe drinking water.</p>
+            </div>
           </div>
-
-          <!-- UPS and Inverter Battery -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/ups-inverter-battery-1000x1000.jpeg"
-              alt="UPS and Inverter Battery"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">
-              UPS and Inverter Battery
-            </h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Reliable power backup solutions for your home and office.
-            </p>
+          
+          <div class="product-card fade-in delay-5">
+            <div class="product-image">
+              <img src="./assets/ups-inverter-battery-1000x1000.jpeg" alt="UPS & Inverter" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">UPS & Inverter Battery</h3>
+              <p class="product-text">Reliable power backup solutions for uninterrupted electricity supply.</p>
+            </div>
           </div>
-
-          <!-- LED Lights -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col"
-          >
-            <img
-              src="./assets/LED lights.jpg"
-              alt="LED Lights"
-              class="rounded-lg mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-900">LED Lights</h3>
-            <p class="text-gray-600 mt-2 flex-grow">
-              Bright and energy-saving LED lights for your home and office.
-            </p>
+          
+          <div class="product-card fade-in delay-6">
+            <div class="product-image">
+              <img src="./assets/LED lights.jpg" alt="LED Lights" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">LED Lighting</h3>
+              <p class="product-text">Bright and energy-saving LED lights for homes and commercial spaces.</p>
+            </div>
           </div>
         </div>
-        <a
-          href="./home-appliances.html"
-          class="mt-12 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105"
-        >
-          Learn More
-        </a>
+        
+        <div class="text-center mt-5 fade-in">
+          <a href="./home-appliances.html" class="btn btn-outline">View All Products →</a>
+        </div>
       </div>
     </section>
 
-    <!-- Quality, Experience, Support Section -->
-    <section id="info" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4">
-        <div
-          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 mb-3">
-            Quality Products & Service
-          </h3>
-          <p class="text-gray-700">
-            We deliver industry-standard products with quality service and
-            pricing to ensure long-term performance and satisfaction.
-          </p>
+    <!-- Why Choose Us Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-badge">Why Choose Us</span>
+          <h2 class="section-title">Trusted by Hundreds of Customers</h2>
+          <p class="section-subtitle">We deliver excellence through quality products, expert service, and unwavering commitment to customer satisfaction.</p>
         </div>
-        <div
-          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 mb-3">
-            International Experience
-          </h3>
-          <p class="text-gray-700">
-            Our management includes industry veterans with global experience.
-            Our production follows strict, standardized procedures.
-          </p>
+        
+        <div class="grid-3">
+          <div class="feature-card fade-in delay-1">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Quality Assured</h3>
+            <p class="feature-text">We deliver industry-standard products with rigorous quality checks to ensure long-term performance and satisfaction.</p>
+          </div>
+          
+          <div class="feature-card fade-in delay-2">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Global Experience</h3>
+            <p class="feature-text">Our management includes industry veterans with international experience, ensuring world-class service standards.</p>
+          </div>
+          
+          <div class="feature-card fade-in delay-3">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-title">Pan-India Support</h3>
+            <p class="feature-text">We operate nationwide through authorized partners, ensuring quick proposals, installations, and service.</p>
+          </div>
         </div>
-        <div
-          class="bg-gray-100 p-6 rounded-xl shadow-lg text-center md:text-left animate-fade-in"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 mb-3">
-            Nationwide Support
-          </h3>
-          <p class="text-gray-700">
-            We operate pan-India through authorized partners, ensuring quick
-            proposals, installations, and service wherever you are.
-          </p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="cta-section fade-in">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Go Solar?</h2>
+          <p class="cta-text">Get a free consultation and quote for your solar energy or security system installation. Our experts are ready to help you make the switch.</p>
+          <div class="hero-buttons">
+            <a href="./contact.html" class="btn btn-white">Get Free Quote</a>
+            <a href="tel:+917204657707" class="btn btn-secondary">Call: 7204657707</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
-        >
-          <!-- Navigation Links -->
-          <div class="flex flex-wrap items-center gap-6 text-sm">
-            <a href="./about.html" class="hover:text-white transition"
-              >About Us</a
-            >
-            <a href="./solar-systems.html" class="hover:text-white transition"
-              >Services</a
-            >
-            <a href="./contact.html" class="hover:text-white transition"
-              >Contact</a
-            >
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems" />
+            <span>Shresht Systems</span>
           </div>
-
-          <!-- Copyright -->
-          <p class="text-sm text-gray-400">
-            &copy; 2025
-            <span class="text-white font-medium">Shresht Systems</span>. All
-            rights reserved.
-          </p>
+          <p class="footer-desc">Your trusted partner for solar energy, security systems, and smart home appliances. Serving Udupi and Karnataka with quality products and expert service.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/917204657707" class="social-link" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="./solar-systems.html">Solar Systems</a>
+            <a href="./security-systems.html">Security Systems</a>
+            <a href="./home-appliances.html">Home Appliances</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Harshitha Building, Onthibettu, Udupi District - 576113</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>7204657707, 9901730305</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>shreshtsystems@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>Shresht Systems</strong>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      hamburger.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+      
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Close mobile menu when clicking a link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+        });
+      });
+      
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+        observer.observe(el);
       });
     </script>
   </body>

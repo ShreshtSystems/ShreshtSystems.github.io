@@ -3,267 +3,292 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Shresht Systems</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Contact Shresht Systems for Solar Energy, CCTV Security, and Home Appliance solutions in Udupi, Karnataka." />
+    <title>Contact Us - Shresht Systems</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
 
-  <body class="font-sans text-gray-900 flex flex-col min-h-dvh">
-    <!-- Header Section -->
-    <section id="about" class="bg-white">
-      <header class="bg-white">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-        >
-          <!-- Logo -->
-          <a href="./index.html" class="flex items-center space-x-3">
-            <img
-              src="./assets/Shresht-Logo-Final.png"
-              alt="Shresht Systems Logo"
-              class="h-10 w-auto"
-            />
-            <span class="text-lg font-semibold text-gray-800"
-              >Shresht Systems</span
-            >
-          </a>
-  
-          <!-- Desktop Navigation -->
-          <nav class="hidden md:flex space-x-6">
-            <a
-              href="./index.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home</a
-            >
-            <a
-              href="./solar-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Solar Systems</a
-            >
-            <a
-              href="./security-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Security Systems</a
-            >
-            <a
-              href="./home-appliances.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home Appliances</a
-            >
-            <a
-              href="./projects.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Projects</a
-            >
-            <a
-              href="./about.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >About Us</a
-            >
-            <a
-              href="./contact.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Contact</a
-            >
-          </nav>
-  
-          <!-- Mobile Hamburger Button -->
-          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-          </button>
+  <body class="page-min-height">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="./index.html" class="navbar-logo">
+          <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems Logo" />
+          <span>Shresht Systems</span>
+        </a>
+        
+        <div class="navbar-menu">
+          <a href="./index.html" class="navbar-link">Home</a>
+          <a href="./solar-systems.html" class="navbar-link">Solar Systems</a>
+          <a href="./security-systems.html" class="navbar-link">Security</a>
+          <a href="./home-appliances.html" class="navbar-link">Appliances</a>
+          <a href="./projects.html" class="navbar-link">Projects</a>
+          <a href="./about.html" class="navbar-link">About</a>
+          <a href="./contact.html" class="navbar-cta active">Contact Us</a>
         </div>
-      </header>
-      <!-- Mobile Menu (Initially Hidden) -->
-      <div
-        id="mobile-menu"
-        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
-      >
-        <nav class="space-y-4">
-          <a
-            href="./index.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home</a
-          >
-          <a
-            href="./solar-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Solar Systems</a
-          >
-          <a
-            href="./security-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Security Systems</a
-          >
-          <a
-            href="./home-appliances.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home Appliances</a
-          >
-          <a
-            href="./projects.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Projects</a
-          >
-          <a
-            href="./about.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >About Us</a
-          >
-          <a
-            href="./contact.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Contact</a
-          >
-        </nav>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./solar-systems.html">Solar Systems</a>
+      <a href="./security-systems.html">Security Systems</a>
+      <a href="./home-appliances.html">Home Appliances</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-white py-12 px-4">
-      <div class="max-w-6xl mx-auto text-center">
-        <!-- Heading -->
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
-        <p class="text-lg text-gray-600 mb-16">
-          We'd love to hear from you. Reach out via phone, email, or drop by our
-          office.
-        </p>
+    <div class="page-content">
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="page-hero-content fade-in">
+          <span class="hero-badge">Get in Touch</span>
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you. Reach out for inquiries, quotes, or support.</p>
+        </div>
+      </section>
 
-        <!-- Contact Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <!-- Address -->
-          <div class="flex flex-col items-center">
-            <div class="mb-4 text-blue-600">
-              <!-- MapPin Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-map-pin-icon lucide-map-pin"
-              >
-                <path
-                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
+      <!-- Contact Cards -->
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Address Card -->
+            <div class="contact-card fade-in delay-1">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="contact-title">Our Office</h3>
+              <p class="contact-text">
+                Harshitha Building, Onthibettu,<br />
+                Udupi District - 576113,<br />
+                Karnataka, India
+              </p>
             </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
-            <p class="text-gray-700 leading-relaxed max-w-xs">
-              Harshitha Building, Onthibettu,<br />
-              Udupi District - 576113
-            </p>
+            
+            <!-- Phone Card -->
+            <div class="contact-card fade-in delay-2">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="contact-title">Call Us</h3>
+              <p class="contact-text">
+                <a href="tel:+917204657707">+91 7204657707</a><br />
+                <a href="tel:+919901730305">+91 9901730305</a>
+              </p>
+            </div>
+            
+            <!-- Email Card -->
+            <div class="contact-card fade-in delay-3">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="contact-title">Email Us</h3>
+              <p class="contact-text">
+                <a href="mailto:shreshtsystems@gmail.com">shreshtsystems@gmail.com</a>
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Phone -->
-          <div class="flex flex-col items-center">
-            <div class="mb-4 text-blue-600">
-              <!-- Phone Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-phone-icon lucide-phone"
-              >
-                <path
-                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-            <p class="text-gray-700">
-              <a
-                href="tel:+917204657707"
-                class="block text-blue-600 hover:underline"
-                >7204657707</a
-              >
-              <a
-                href="tel:+919901730305"
-                class="block text-blue-600 hover:underline"
-                >9901730305</a
-              >
-            </p>
-          </div>
-
-          <!-- Email -->
-          <div class="flex flex-col items-center">
-            <div class="mb-4 text-blue-600">
-              <!-- Mail Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-mail-icon lucide-mail"
-              >
-                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
-            <p class="text-gray-700">
-              <a
-                href="mailto:shreshtsystems@gmail.com"
-                class="text-blue-600 hover:underline"
-              >
-                shreshtsystems@gmail.com
+      <!-- WhatsApp CTA -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="cta-section fade-in" style="margin: 0;">
+            <div class="cta-content">
+              <h2 class="cta-title">Quick Connect via WhatsApp</h2>
+              <p class="cta-text">Get instant responses to your queries. Message us on WhatsApp for fast support and quotations.</p>
+              <a href="https://wa.me/917204657707?text=Hello%2C%20I%20am%20interested%20in%20your%20services." class="btn btn-white" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                Chat on WhatsApp
               </a>
-            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Hours -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Business Hours</span>
+            <h2 class="section-title">When We're Available</h2>
+          </div>
+          
+          <div class="grid-3">
+            <div class="feature-card fade-in delay-1">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Monday - Friday</h3>
+              <p class="feature-text">9:00 AM - 6:00 PM</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Saturday</h3>
+              <p class="feature-text">9:00 AM - 4:00 PM</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-3">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Sunday</h3>
+              <p class="feature-text">Closed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems" />
+            <span>Shresht Systems</span>
+          </div>
+          <p class="footer-desc">Your trusted partner for solar energy, security systems, and smart home appliances. Serving Udupi and Karnataka with quality products and expert service.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/917204657707" class="social-link" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="./solar-systems.html">Solar Systems</a>
+            <a href="./security-systems.html">Security Systems</a>
+            <a href="./home-appliances.html">Home Appliances</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Harshitha Building, Onthibettu, Udupi District - 576113</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>7204657707, 9901730305</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>shreshtsystems@gmail.com</span>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-auto">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
-        >
-          <!-- Navigation Links -->
-          <div class="flex flex-wrap items-center gap-6 text-sm">
-            <a href="./about.html" class="hover:text-white transition"
-              >About Us</a
-            >
-            <a href="./solar-systems.html" class="hover:text-white transition"
-              >Services</a
-            >
-            <a href="./contact.html" class="hover:text-white transition"
-              >Contact</a
-            >
-          </div>
-
-          <!-- Copyright -->
-          <p class="text-sm text-gray-400">
-            &copy; 2025
-            <span class="text-white font-medium">Shresht Systems</span>. All
-            rights reserved.
-          </p>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>Shresht Systems</strong>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      hamburger.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      navbar.classList.add('scrolled');
+      
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+        observer.observe(el);
       });
     </script>
   </body>
