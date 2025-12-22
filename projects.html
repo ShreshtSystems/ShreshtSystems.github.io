@@ -3,317 +3,444 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View our completed projects - Solar installations, CCTV systems, and home automation by Shresht Systems." />
     <title>Projects - Shresht Systems</title>
-    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
 
-  <body class="bg-white text-gray-900 flex flex-col min-h-dvh">
-    <section id="about" class="bg-white shadow-md">
-      <header class="bg-white">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-        >
-          <!-- Logo -->
-          <a href="./index.html">
-            <img
-              src="./assets/logo.png"
-              alt="Shresht Systems Logo"
-              class="h-12 w-auto"
-            />
-          </a>
-
-          <!-- Desktop Navigation -->
-          <nav class="hidden md:flex space-x-6">
-            <a
-              href="./index.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home</a
-            >
-            <a
-              href="./solar-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Solar Systems</a
-            >
-            <a
-              href="./security-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Security Systems</a
-            >
-            <a
-              href="./home-appliances.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home Appliances</a
-            >
-            <a
-              href="./projects.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Projects</a
-            >
-            <a
-              href="./about.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >About Us</a
-            >
-            <a
-              href="./contact.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Contact</a
-            >
-          </nav>
-
-          <!-- Mobile Hamburger Button -->
-          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-          </button>
+  <body class="page-min-height">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="./index.html" class="navbar-logo">
+          <img src="./assets/icon.png" alt="Shresht Systems Logo" />
+          <span>Shresht Systems</span>
+        </a>
+        
+        <div class="navbar-menu">
+          <a href="./index.html" class="navbar-link">Home</a>
+          <a href="./solar-systems.html" class="navbar-link">Solar Systems</a>
+          <a href="./security-systems.html" class="navbar-link">Security</a>
+          <a href="./home-appliances.html" class="navbar-link">Appliances</a>
+          <a href="./projects.html" class="navbar-link active">Projects</a>
+          <a href="./about.html" class="navbar-link">About</a>
+          <a href="./contact.html" class="navbar-cta">Contact Us</a>
         </div>
-      </header>
-      <!-- Mobile Menu (Initially Hidden) -->
-      <div
-        id="mobile-menu"
-        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
-      >
-        <nav class="space-y-4">
-          <a
-            href="./index.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home</a
-          >
-          <a
-            href="./solar-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Solar Systems</a
-          >
-          <a
-            href="./security-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Security Systems</a
-          >
-          <a
-            href="./home-appliances.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home Appliances</a
-          >
-          <a
-            href="./projects.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Projects</a
-          >
-          <a
-            href="./about.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >About Us</a
-          >
-          <a
-            href="./contact.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Contact</a
-          >
-        </nav>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./solar-systems.html">Solar Systems</a>
+      <a href="./security-systems.html">Security Systems</a>
+      <a href="./home-appliances.html">Home Appliances</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
-    <section id="about" class="py-20 bg-gray-50 text-center">
-      <div class="max-w-6xl mx-auto px-4">
-        <h1 class="text-4xl font-extrabold text-gray-800">Major Projects</h1>
-        <h2 class="text-xl sm:text-2xl mt-4 text-gray-600 font-medium">
-          Trusted Installations Across India
-        </h2>
-        <p class="mt-6 text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          At <strong>Shresht Systems</strong>, we've completed numerous solar
-          and security system projects that showcase our commitment to quality,
-          innovation, and sustainability. Our installations span homes,
-          institutions, and commercial sites — ensuring clean energy and secure
-          environments.
-        </p>
+    <div class="page-content">
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="page-hero-content fade-in">
+          <span class="hero-badge">🏆 Our Work</span>
+          <h1>Major Projects</h1>
+          <p>Explore our portfolio of successfully completed solar installations, security systems, and smart home solutions across Karnataka.</p>
+        </div>
+      </section>
 
-        <!-- Projects Grid -->
-        <div
-          class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left"
-        >
-          <!-- Project 1 -->
-          <div
-            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./assets/projects/manipal-industrial-area.jpg"
-              alt="Solar Panel Installation at Manipal Industrial Area"
-              class="rounded-t-xl w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800">
-                Industrial Solar Project
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">
-                Manipal Industrial Area, Udupi
-              </p>
-              <a
-                href="https://www.google.com/maps/place/Manipal+Industrial+Area,+Udupi,+Karnataka"
-                target="_blank"
-                class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >
-                View on Map →
-              </a>
+      <!-- Stats Section -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item fade-in">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Delivered</div>
             </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div
-            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./assets/projects/residential-4kw-katpadi.jpg"
-              alt="4kW Residential Solar System in Katpadi"
-              class="rounded-t-xl w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800">
-                4 kW Residential Solar System
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">Katpadi, Udupi</p>
-              <a
-                href="https://www.google.com/maps/place/Katapadi,+Udupi,+Karnataka+574105"
-                target="_blank"
-                class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >
-                View on Map →
-              </a>
+            <div class="stat-item fade-in delay-1">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Commercial Installations</div>
             </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./assets/projects/shivapadi-5kw-manipal.jpg"
-              alt="5kW Solar Plant at Shivapadi, Manipal"
-              class="rounded-t-xl w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800">
-                5 kW Solar Plant
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">Shivapadi, Manipal</p>
-              <a
-                href="https://www.google.com/maps/place/Shivapadi,+Manipal,+Karnataka"
-                target="_blank"
-                class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >
-                View on Map →
-              </a>
+            <div class="stat-item fade-in delay-2">
+              <div class="stat-number">400+</div>
+              <div class="stat-label">Residential Projects</div>
             </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div
-            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./assets/projects/color-park-4kw-manipal.jpg"
-              alt="4kW Solar Installation at Color Park, Manipal"
-              class="rounded-t-xl w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800">
-                4 kW System @ Color Park
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">Color Park, Manipal</p>
-              <a
-                href="https://www.google.com/maps/place/Manipal+Color+Park"
-                target="_blank"
-                class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >
-                View on Map →
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div
-            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./assets/projects/manipal.jpg"
-              alt="Residential Solar System in Manipal"
-              class="rounded-t-xl w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800">
-                Residential Solar Setup
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">Manipal, Udupi</p>
-              <a
-                href="https://www.google.com/maps/place/Manipal,+Karnataka"
-                target="_blank"
-                class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >
-                View on Map →
-              </a>
+            <div class="stat-item fade-in delay-3">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Industrial Setups</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
-        >
-          <!-- Left: Navigation Links -->
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm"
-          >
-            <a href="./about.html" class="hover:text-white transition"
-              >About Us</a
-            >
-            <a href="./solar-systems.html" class="hover:text-white transition"
-              >Services</a
-            >
-            <a href="./contact.html" class="hover:text-white transition"
-              >Contact</a
-            >
+      <!-- Project Categories -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Portfolio</span>
+            <h2 class="section-title">Our Expertise Areas</h2>
+            <p class="section-subtitle">We specialize in delivering comprehensive energy and security solutions.</p>
           </div>
+          
+          <div class="grid-3">
+            <div class="feature-card fade-in delay-1">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Solar Installations</h3>
+              <p class="feature-text">Rooftop solar systems for homes, businesses, and industries. On-grid, off-grid, and hybrid solutions with professional installation.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title">Security Systems</h3>
+              <p class="feature-text">CCTV installations for residential complexes, offices, factories, and public spaces with remote monitoring capabilities.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-3">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Smart Home Solutions</h3>
+              <p class="feature-text">Automated gates, LED lighting, water heaters, and integrated home automation for modern living.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <!-- Center: Author Info -->
-          <div class="text-sm text-gray-400 text-left md:text-center">
-            <p class="leading-relaxed">
-              Website by
-              <a
-                href="https://jithesh.vercel.app/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Jithesh</a
-              >
-              &amp;
-              <a
-                href="https://mayurapatkar.github.io/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Mayur</a
-              >
+      <!-- Major Projects Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <h2 class="section-title">Major Projects</h2>
+            <p class="section-subtitle">Trusted Installations Across India</p>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--gray-600); margin-top: 1rem;">
+              At <strong>Shresht Systems</strong>, we've completed numerous solar and security system projects that showcase our commitment to quality, innovation, and sustainability. Our installations span homes, institutions, and commercial sites — ensuring clean energy and secure environments.
             </p>
           </div>
 
-          <!-- Right: Copyright -->
-          <div class="text-sm text-gray-500 text-left md:text-right">
-            &copy; 2025
-            <span class="text-white font-medium">Shresht Systems</span>. All
-            rights reserved.
+          <div class="grid-3">
+            <!-- Project 1 -->
+            <div class="card fade-in delay-1">
+              <div class="card-image">
+                <img src="./assets/manipal-industrial-area.jpg" alt="Industrial Solar Project" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Industrial Solar Project</h3>
+                <p class="project-location">Manipal Industrial Area, Udupi</p>
+                <a href="#" class="card-link">View on Map →</a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card fade-in delay-2">
+              <div class="card-image">
+                <img src="./assets/residential-4kw-katpadi.jpg" alt="4 kW Residential Solar System" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">4 kW Residential Solar System</h3>
+                <p class="project-location">Katpadi, Udupi</p>
+                <a href="#" class="card-link">View on Map →</a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card fade-in delay-3">
+              <div class="card-image">
+                <img src="./assets/shivapadi-5kw-manipal.jpg" alt="5 kW Solar Plant" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">5 kW Solar Plant</h3>
+                <p class="project-location">Shivapadi, Manipal</p>
+                <a href="#" class="card-link">View on Map →</a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card fade-in delay-1">
+              <div class="card-image">
+                <img src="./assets/color-park-4kw-manipal.jpg" alt="4 kW System @ Color Park" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">4 kW System @ Color Park</h3>
+                <p class="project-location">Color Park, Manipal</p>
+                <a href="#" class="card-link">View on Map →</a>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="card fade-in delay-2">
+              <div class="card-image">
+                <img src="./assets/manipal.jpg" alt="Residential Solar Setup" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Residential Solar Setup</h3>
+                <p class="project-location">Manipal, Udupi</p>
+                <a href="#" class="card-link">View on Map →</a>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Project Highlights -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Highlights</span>
+            <h2 class="section-title">Notable Installations</h2>
+            <p class="section-subtitle">Some of our landmark projects across the region.</p>
+          </div>
+          
+          <div class="grid-2">
+            <div class="card fade-in slide-left">
+              <div class="card-image">
+                <img src="./assets/solar_img2.jpg" alt="Commercial Solar Project" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Commercial Solar Plant</h3>
+                <p class="card-text">Large-scale solar installation for commercial buildings, delivering significant energy savings and sustainable power generation.</p>
+              </div>
+            </div>
+            
+            <div class="card fade-in slide-right">
+              <div class="card-image">
+                <img src="./assets/cctv_img1.avif" alt="Security System Project" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Enterprise Security Setup</h3>
+                <p class="card-text">Complete CCTV and access control system for industrial facilities with 24/7 monitoring and cloud storage.</p>
+              </div>
+            </div>
+            
+            <div class="card fade-in slide-left">
+              <div class="card-image">
+                <img src="./assets/ongrid.webp" alt="Residential Solar" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Residential Solar Systems</h3>
+                <p class="card-text">Hundreds of home solar installations across Udupi district, helping families reduce electricity bills by up to 90%.</p>
+              </div>
+            </div>
+            
+            <div class="card fade-in slide-right">
+              <div class="card-image">
+                <img src="./assets/street light.jpeg" alt="Street Lighting Project" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Solar Street Lighting</h3>
+                <p class="card-text">Installation of solar-powered street lights in rural and urban areas, providing sustainable lighting solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Testimonials</span>
+            <h2 class="section-title">What Our Clients Say</h2>
+          </div>
+          
+          <div class="grid-3">
+            <div class="feature-card fade-in delay-1" style="text-align: left;">
+              <p class="feature-text" style="font-style: italic; margin-bottom: 1.5rem;">"Shresht Systems installed our rooftop solar system. Excellent work quality and the team was very professional. Our electricity bill has reduced significantly!"</p>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">R</div>
+                <div>
+                  <strong style="color: var(--gray-900);">Rajesh Kumar</strong>
+                  <p style="font-size: 0.875rem; color: var(--gray-500); margin: 0;">Udupi Resident</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="feature-card fade-in delay-2" style="text-align: left;">
+              <p class="feature-text" style="font-style: italic; margin-bottom: 1.5rem;">"We got our office CCTV system installed by Shresht. The quality of cameras is great and the mobile app works perfectly for remote monitoring."</p>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">P</div>
+                <div>
+                  <strong style="color: var(--gray-900);">Priya Shetty</strong>
+                  <p style="font-size: 0.875rem; color: var(--gray-500); margin: 0;">Business Owner</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="feature-card fade-in delay-3" style="text-align: left;">
+              <p class="feature-text" style="font-style: italic; margin-bottom: 1.5rem;">"Very happy with the solar water heater installation. The team was punctual, clean, and explained everything clearly. Highly recommended!"</p>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">S</div>
+                <div>
+                  <strong style="color: var(--gray-900);">Suresh Pai</strong>
+                  <p style="font-size: 0.875rem; color: var(--gray-500); margin: 0;">Manipal Resident</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="cta-section fade-in" style="margin: 0;">
+            <div class="cta-content">
+              <h2 class="cta-title">Ready to Start Your Project?</h2>
+              <p class="cta-text">Join our growing list of satisfied customers. Get a free consultation and quote for your solar, security, or home automation needs.</p>
+              <div class="hero-buttons">
+                <a href="./contact.html" class="btn btn-white">Get Free Quote</a>
+                <a href="tel:+917204657707" class="btn btn-secondary">Call: 7204657707</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems" />
+            <span>Shresht Systems</span>
+          </div>
+          <p class="footer-desc">Your trusted partner for solar energy, security systems, and smart home appliances. Serving Udupi and Karnataka with quality products and expert service.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/917204657707" class="social-link" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="./solar-systems.html">Solar Systems</a>
+            <a href="./security-systems.html">Security Systems</a>
+            <a href="./home-appliances.html">Home Appliances</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Harshitha Building, Onthibettu, Udupi District - 576113</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>7204657707, 9901730305</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>shreshtsystems@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>Shresht Systems</strong>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      hamburger.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      navbar.classList.add('scrolled');
+      
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+        observer.observe(el);
       });
     </script>
   </body>

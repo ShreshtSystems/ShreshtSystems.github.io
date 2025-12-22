@@ -3,270 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Shresht Systems - Your trusted partner for Solar Energy, Security Systems, and Home Appliances in Udupi, Karnataka." />
     <title>About Us - Shresht Systems</title>
-    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
 
-  <body class="font-sans bg-gray-50 text-gray-900">
-    <!-- Header Section -->
-    <header class="bg-white">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-      >
-        <!-- Logo -->
-        <a href="./index.html">
-          <img
-            src="./assets/logo.png"
-            alt="Shresht Systems Logo"
-            class="h-12 w-auto"
-          />
+  <body class="page-min-height">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="./index.html" class="navbar-logo">
+          <img src="./assets/icon.png" alt="Shresht Systems Logo" />
+          <span>Shresht Systems</span>
         </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-6">
-          <a
-            href="./index.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Home</a
-          >
-          <a
-            href="./solar-systems.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Solar Systems</a
-          >
-          <a
-            href="./security-systems.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Security Systems</a
-          >
-          <a
-            href="./home-appliances.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Home Appliances</a
-          >
-          <a
-            href="./projects.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Projects</a
-          >
-          <a
-            href="./about.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >About Us</a
-          >
-          <a
-            href="./contact.html"
-            class="text-gray-700 hover:text-blue-600 transition"
-            >Contact</a
-          >
-        </nav>
-
-        <!-- Mobile Hamburger Button -->
-        <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-          <span class="block h-0.5 w-6 bg-gray-700"></span>
-          <span class="block h-0.5 w-6 bg-gray-700"></span>
-          <span class="block h-0.5 w-6 bg-gray-700"></span>
+        
+        <div class="navbar-menu">
+          <a href="./index.html" class="navbar-link">Home</a>
+          <a href="./solar-systems.html" class="navbar-link">Solar Systems</a>
+          <a href="./security-systems.html" class="navbar-link">Security</a>
+          <a href="./home-appliances.html" class="navbar-link">Appliances</a>
+          <a href="./projects.html" class="navbar-link">Projects</a>
+          <a href="./about.html" class="navbar-link active">About</a>
+          <a href="./contact.html" class="navbar-cta">Contact Us</a>
+        </div>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
-    </header>
-    <!-- Mobile Menu (Initially Hidden) -->
-    <div
-      id="mobile-menu"
-      class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
-    >
-      <nav class="space-y-4">
-        <a
-          href="./index.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Home</a
-        >
-        <a
-          href="./solar-systems.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Solar Systems</a
-        >
-        <a
-          href="./security-systems.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Security Systems</a
-        >
-        <a
-          href="./home-appliances.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Home Appliances</a
-        >
-        <a
-          href="./projects.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Projects</a
-        >
-        <a
-          href="./about.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >About Us</a
-        >
-        <a
-          href="./contact.html"
-          class="block text-gray-700 hover:text-blue-600 transition"
-          >Contact</a
-        >
-      </nav>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./solar-systems.html">Solar Systems</a>
+      <a href="./security-systems.html">Security Systems</a>
+      <a href="./home-appliances.html">Home Appliances</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
     </div>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-6 md:py-16 px-6 bg-white">
-      <div class="max-w-5xl mx-auto text-center">
-        <h1 class="text-4xl font-bold text-gray-900">About Us</h1>
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-          Shresht Systems, based in Udupi District, is your trusted partner in
-          delivering cutting-edge solutions for energy efficiency, security, and
-          smart living. Located at Harshitha Building, Ontibettu, we are
-          committed to providing top-quality service and products for both
-          residential and commercial clients.
-        </p>
-        <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-          With years of expertise, we specialize in:
-        </p>
-
-        <div class="mt-8 text-center space-y-4 max-w-2xl mx-auto">
-          <div class="text-gray-700 font-medium gap-2">
-            Solar Solutions: Rooftop systems, solar panels, and water heaters.
-          </div>
-          <div class="text-gray-700 font-medium gap-2">
-            Security Systems: High-performance CCTV setups.
-          </div>
-          <div class="text-gray-700 font-medium gap-2">
-            Energy Products: UPS-inverter batteries for reliable power.
-          </div>
-          <div class="text-gray-700 font-medium gap-2">
-            Lifestyle Enhancements: LED lights and water softeners.
-          </div>
+    <div class="page-content">
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="page-hero-content fade-in">
+          <span class="hero-badge">About Us</span>
+          <h1>Powering a Sustainable Future</h1>
+          <p>Since our inception, we've been committed to delivering innovative energy and security solutions that make a real difference in people's lives.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Mission Section -->
-    <section id="mission" class="py-20 px-6 bg-gray-50">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold text-gray-900">Our Mission</h2>
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-          To provide sustainable and innovative technology solutions that
-          enhance security, convenience, and energy efficiency. Through modern
-          advancements, we contribute to a smarter, greener future.
-        </p>
-      </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="py-20 px-6 bg-white">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold text-gray-900">Our Vision</h2>
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-          We envision a world where every home and business operates
-          efficiently, securely, and sustainably. Our aim is to blend technology
-          into everyday life, creating a seamless and responsible living
-          experience.
-        </p>
-      </div>
-    </section>
-
-    <!-- Core Values Section -->
-    <section id="values" class="py-20 px-6 bg-gray-50">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-semibold text-center text-gray-900">
-          Core Values
-        </h2>
-        <div
-          class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
-        >
-          <div class="text-center px-4">
-            <h3 class="text-xl font-bold text-blue-600">Innovation</h3>
-            <p class="mt-3 text-gray-600 leading-relaxed">
-              Staying ahead with cutting-edge technology and continuous
-              improvement.
+      <!-- About Content -->
+      <section class="section">
+        <div class="container">
+          <div class="about-content fade-in">
+            <p class="mb-4">
+              <strong style="color: var(--gray-900);">Shresht Systems</strong>, based in Udupi District, is your trusted partner in delivering cutting-edge solutions for energy efficiency, security, and smart living. Located at Harshitha Building, Ontibettu, we are committed to providing top-quality service and products for both residential and commercial clients.
             </p>
-          </div>
-          <div class="text-center px-4">
-            <h3 class="text-xl font-bold text-blue-600">Integrity</h3>
-            <p class="mt-3 text-gray-600 leading-relaxed">
-              Committing to honesty, transparency, and accountability in every
-              interaction.
-            </p>
-          </div>
-          <div class="text-center px-4">
-            <h3 class="text-xl font-bold text-blue-600">Customer Commitment</h3>
-            <p class="mt-3 text-gray-600 leading-relaxed">
-              Delivering personalized solutions that exceed client expectations.
-            </p>
-          </div>
-          <div class="text-center px-4">
-            <h3 class="text-xl font-bold text-blue-600">Quality Excellence</h3>
-            <p class="mt-3 text-gray-600 leading-relaxed">
-              Striving for the highest standards in our products and services.
+            <p>
+              With years of expertise, we specialize in a wide range of products and services designed to make your life more sustainable, secure, and comfortable.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- What We Do -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">What We Do</span>
+            <h2 class="section-title">Our Expertise</h2>
+            <p class="section-subtitle">We bring together technology and sustainability to deliver comprehensive solutions.</p>
+          </div>
+          
+          <div class="grid-4">
+            <div class="feature-card fade-in delay-1">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Solar Solutions</h3>
+              <p class="feature-text">Rooftop systems, solar panels, and water heaters for sustainable energy.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title">Security Systems</h3>
+              <p class="feature-text">High-performance CCTV setups and biometric access control.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-3">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Energy Products</h3>
+              <p class="feature-text">UPS-inverter batteries for reliable power backup solutions.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-4">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                  <polyline points="16 17 21 12 16 7"></polyline>
+                  <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Smart Living</h3>
+              <p class="feature-text">LED lights, water softeners, and home automation products.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="section">
+        <div class="container">
+          <div class="grid-2">
+            <div class="feature-card fade-in slide-left" style="text-align: left; padding: 3rem;">
+              <div class="feature-icon" style="margin: 0 0 1.5rem 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title" style="font-size: 1.75rem;">Our Mission</h3>
+              <p class="feature-text" style="font-size: 1.1rem; line-height: 1.8;">To provide sustainable and innovative technology solutions that enhance security, convenience, and energy efficiency. Through modern advancements, we contribute to a smarter, greener future for all.</p>
+            </div>
+            
+            <div class="feature-card fade-in slide-right" style="text-align: left; padding: 3rem;">
+              <div class="feature-icon" style="margin: 0 0 1.5rem 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title" style="font-size: 1.75rem;">Our Vision</h3>
+              <p class="feature-text" style="font-size: 1.1rem; line-height: 1.8;">We envision a world where every home and business operates efficiently, securely, and sustainably. Our aim is to blend technology into everyday life, creating a seamless and responsible living experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Our Values</span>
+            <h2 class="section-title">What Drives Us</h2>
+            <p class="section-subtitle">Our core values guide every decision we make and every service we deliver.</p>
+          </div>
+          
+          <div class="values-grid">
+            <div class="value-card fade-in delay-1">
+              <h3>Innovation</h3>
+              <p>Staying ahead with cutting-edge technology and continuous improvement in everything we do.</p>
+            </div>
+            
+            <div class="value-card fade-in delay-2">
+              <h3>Integrity</h3>
+              <p>Committing to honesty, transparency, and accountability in every customer interaction.</p>
+            </div>
+            
+            <div class="value-card fade-in delay-3">
+              <h3>Customer First</h3>
+              <p>Delivering personalized solutions that exceed expectations and build lasting relationships.</p>
+            </div>
+            
+            <div class="value-card fade-in delay-4">
+              <h3>Excellence</h3>
+              <p>Striving for the highest standards in our products, services, and customer support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section">
+        <div class="cta-section fade-in">
+          <div class="cta-content">
+            <h2 class="cta-title">Let's Work Together</h2>
+            <p class="cta-text">Ready to transform your home or business with sustainable energy solutions? Get in touch with our team today.</p>
+            <a href="./contact.html" class="btn btn-white">Contact Us →</a>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
-        >
-          <!-- Left: Navigation Links -->
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm"
-          >
-            <a href="./about.html" class="hover:text-white transition"
-              >About Us</a
-            >
-            <a href="./solar-systems.html" class="hover:text-white transition"
-              >Services</a
-            >
-            <a href="./contact.html" class="hover:text-white transition"
-              >Contact</a
-            >
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems" />
+            <span>Shresht Systems</span>
           </div>
-
-          <!-- Center: Author Info -->
-          <div class="text-sm text-gray-400 text-left md:text-center">
-            <p class="leading-relaxed">
-              Website by
-              <a
-                href="https://jithesh.vercel.app/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Jithesh</a
-              >
-              &amp;
-              <a
-                href="https://mayurapatkar.github.io/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Mayur</a
-              >
-            </p>
+          <p class="footer-desc">Your trusted partner for solar energy, security systems, and smart home appliances. Serving Udupi and Karnataka with quality products and expert service.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/917204657707" class="social-link" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Right: Copyright -->
-          <div class="text-sm text-gray-500 text-left md:text-right">
-            &copy; 2025
-            <span class="text-white font-medium">Shresht Systems</span>. All
-            rights reserved.
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
           </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="./solar-systems.html">Solar Systems</a>
+            <a href="./security-systems.html">Security Systems</a>
+            <a href="./home-appliances.html">Home Appliances</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Harshitha Building, Onthibettu, Udupi District - 576113</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>7204657707, 9901730305</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>shreshtsystems@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>Shresht Systems</strong>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      hamburger.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      navbar.classList.add('scrolled');
+      
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+        observer.observe(el);
       });
     </script>
   </body>

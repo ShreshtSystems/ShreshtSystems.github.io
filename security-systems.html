@@ -3,487 +3,379 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shresht Systems - Security Systems</title>
-    <link rel="icon" href="./assets/icon.png" type="image/icon type" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="CCTV and Security System Solutions by Shresht Systems - Udupi, Karnataka. Professional surveillance and access control systems." />
+    <title>Security Systems - Shresht Systems</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
 
-  <body class="bg-gray-100 text-gray-900">
-    <section class="bg-white shadow-md">
-      <header class="bg-white">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-        >
-          <!-- Logo -->
-          <a href="./index.html">
-            <img
-              src="./assets/logo.png"
-              alt="Shresht Systems Logo"
-              class="h-12 w-auto"
-            />
-          </a>
-
-          <!-- Desktop Navigation -->
-          <nav class="hidden md:flex space-x-6">
-            <a
-              href="./index.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home</a
-            >
-            <a
-              href="./solar-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Solar Systems</a
-            >
-            <a
-              href="./security-systems.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Security Systems</a
-            >
-            <a
-              href="./home-appliances.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Home Appliances</a
-            >
-            <a
-              href="./projects.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Projects</a
-            >
-            <a
-              href="./about.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >About Us</a
-            >
-            <a
-              href="./contact.html"
-              class="text-gray-700 hover:text-blue-600 transition"
-              >Contact</a
-            >
-          </nav>
-
-          <!-- Mobile Hamburger Button -->
-          <button id="hamburger" class="md:hidden flex flex-col space-y-1">
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-            <span class="block h-0.5 w-6 bg-gray-700"></span>
-          </button>
+  <body class="page-min-height">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="./index.html" class="navbar-logo">
+          <img src="./assets/icon.png" alt="Shresht Systems Logo" />
+          <span>Shresht Systems</span>
+        </a>
+        
+        <div class="navbar-menu">
+          <a href="./index.html" class="navbar-link">Home</a>
+          <a href="./solar-systems.html" class="navbar-link">Solar Systems</a>
+          <a href="./security-systems.html" class="navbar-link active">Security</a>
+          <a href="./home-appliances.html" class="navbar-link">Appliances</a>
+          <a href="./projects.html" class="navbar-link">Projects</a>
+          <a href="./about.html" class="navbar-link">About</a>
+          <a href="./contact.html" class="navbar-cta">Contact Us</a>
         </div>
-      </header>
-      <!-- Mobile Menu (Initially Hidden) -->
-      <div
-        id="mobile-menu"
-        class="absolute top-16 right-5 w-auto bg-white shadow-md p-4 md:hidden hidden"
-      >
-        <nav class="space-y-4">
-          <a
-            href="./index.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home</a
-          >
-          <a
-            href="./solar-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Solar Systems</a
-          >
-          <a
-            href="./security-systems.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Security Systems</a
-          >
-          <a
-            href="./home-appliances.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Home Appliances</a
-          >
-          <a
-            href="./projects.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Projects</a
-          >
-          <a
-            href="./about.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >About Us</a
-          >
-          <a
-            href="./contact.html"
-            class="block text-gray-700 hover:text-blue-600 transition"
-            >Contact</a
-          >
-        </nav>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./solar-systems.html">Solar Systems</a>
+      <a href="./security-systems.html">Security Systems</a>
+      <a href="./home-appliances.html">Home Appliances</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white text-center">
-      <div class="max-w-4xl mx-auto px-4">
-        <!-- Main Heading -->
-        <h1
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
-        >
-          Security Systems
-        </h1>
-
-        <!-- Subheading -->
-        <h1 class="text-2xl md:text-3xl mt-4 text-gray-600 font-medium">
-          High-Quality Security Solutions for Your Home and Business
-        </h1>
-
-        <!-- Supporting Paragraphs -->
-        <div
-          class="mt-6 text-lg text-gray-600 leading-relaxed max-w-prose mx-auto space-y-4"
-        >
-          <p>
-            Shresht Systems is committed to providing advanced, dependable
-            security solutions tailored to your specific needs. Whether you’re
-            protecting a residential space or securing a commercial facility, we
-            bring you the peace of mind you deserve.
-          </p>
-          <p>
-            Our team specializes in the installation and maintenance of
-            cutting-edge surveillance systems, automation setups, and
-            intelligent monitoring tools — all built to deliver performance,
-            reliability, and ease of use.
-          </p>
+    <div class="page-content">
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="page-hero-content fade-in">
+          <span class="hero-badge">🔒 Security Solutions</span>
+          <h1>Security Systems</h1>
+          <p>High-quality CCTV surveillance and security solutions for homes and businesses. Protect what matters most with Shresht Systems.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Our Security Services -->
-    <section class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2
-          class="text-3xl lg:text-5xl font-bold text-center text-gray-800 mb-16"
-        >
-          Our Security Services
-        </h2>
+      <!-- Intro Section -->
+      <section class="section">
+        <div class="container">
+          <div class="about-content fade-in">
+            <p>
+              At Shresht Systems, we offer reliable and professional security services to ensure the safety and automation of your premises with cutting-edge technology. From high-definition cameras to smart access control systems, we provide comprehensive security solutions tailored to your needs.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div class="space-y-14">
-          <!-- Example Service Block -->
-          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/dome-camera.jpg"
-                alt="Dome Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
-            </div>
-            <div class="md:w-1/2 text-center md:text-left space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">Dome Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                Ideal for indoor environments, dome cameras offer discreet
-                surveillance and wide-angle views. Their compact design helps
-                blend seamlessly with modern interiors.
-              </p>
-              <p class="text-sm text-gray-500">
-                Applications: Retail shops, offices, lobbies, and indoor
-                corridors.
-              </p>
-            </div>
+      <!-- Security Products -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Our Products</span>
+            <h2 class="section-title">Security Camera Solutions</h2>
+            <p class="section-subtitle">Professional-grade surveillance equipment for complete peace of mind.</p>
           </div>
 
-          <div
-            class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10"
-          >
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/bullet_camera.jpg"
-                alt="Bullet Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
+          <div class="product-grid">
+            <div class="product-card fade-in delay-1">
+              <div class="product-image">
+                <img src="./assets/dome-camera.jpg" alt="Dome Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">Dome Cameras</h3>
+                <p class="product-text">High-quality dome cameras for comprehensive indoor surveillance coverage with discreet design.</p>
+              </div>
             </div>
-            <div class="md:w-1/2 text-center md:text-right space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">Bullet Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                These weatherproof cameras are perfect for long-range
-                monitoring. Their visible shape can act as a deterrent to
-                intruders.
-              </p>
-              <p class="text-sm text-gray-500">
-                Applications: Parking lots, gates, and long driveways.
-              </p>
+            
+            <div class="product-card fade-in delay-2">
+              <div class="product-image">
+                <img src="./assets/bullet_camera.jpg" alt="Bullet Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">Bullet Cameras</h3>
+                <p class="product-text">Durable bullet cameras for long-range outdoor surveillance with weather-resistant housing.</p>
+              </div>
             </div>
-          </div>
-
-          <!-- Repeat blocks with updated content -->
-          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/HD camera.avif"
-                alt="HD Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
+            
+            <div class="product-card fade-in delay-3">
+              <div class="product-image">
+                <img src="./assets/HD camera.avif" alt="HD Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">HD Cameras</h3>
+                <p class="product-text">High-definition cameras delivering crystal clear 1080p/4K video quality for detailed monitoring.</p>
+              </div>
             </div>
-            <div class="md:w-1/2 text-center md:text-left space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">HD Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                Capture sharp, clear footage even in low-light conditions. Great
-                for evidence collection and detailed monitoring.
-              </p>
-              <p class="text-sm text-gray-500">
-                Resolution options: 1080p, 4MP, 4K
-              </p>
+            
+            <div class="product-card fade-in delay-4">
+              <div class="product-image">
+                <img src="./assets/IP camera.jpeg" alt="IP Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">IP Cameras</h3>
+                <p class="product-text">Network-connected IP cameras with remote viewing capabilities from anywhere in the world.</p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10"
-          >
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/IP camera.jpeg"
-                alt="IP Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
+            
+            <div class="product-card fade-in delay-5">
+              <div class="product-image">
+                <img src="./assets/wifi camera.jpg" alt="WiFi Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">WiFi Cameras</h3>
+                <p class="product-text">Wireless cameras with easy installation and smartphone app integration for live viewing.</p>
+              </div>
             </div>
-            <div class="md:w-1/2 text-center md:text-right space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">IP Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                Internet-enabled surveillance allows you to monitor your
-                premises from any device, anywhere.
-              </p>
-              <p class="text-sm text-gray-500">
-                Features: Cloud storage, remote access, alerts
-              </p>
-            </div>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/solar camera.jpeg"
-                alt="Solar Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
-            </div>
-            <div class="md:w-1/2 text-center md:text-left space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">Solar Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                Designed for off-grid locations, solar-powered cameras are
-                energy-efficient and eco-friendly.
-              </p>
-              <p class="text-sm text-gray-500">
-                No wiring or power source needed.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10"
-          >
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/wifi camera.jpg"
-                alt="WiFi Camera"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
-            </div>
-            <div class="md:w-1/2 text-center md:text-right space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">WiFi Cameras</h2>
-              <p class="text-gray-600 text-lg">
-                Easily install these wireless cameras anywhere with a Wi-Fi
-                signal. Access footage through your mobile app.
-              </p>
-              <p class="text-sm text-gray-500">
-                Ideal for homes and rental properties.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/biometric.png"
-                alt="Biometric Security"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
-            </div>
-            <div class="md:w-1/2 text-center md:text-left space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">
-                Biometric Security
-              </h2>
-              <p class="text-gray-600 text-lg">
-                Control access with fingerprint, face recognition, or retina
-                scanning. Integrate with your main gate or office doors.
-              </p>
-              <p class="text-sm text-gray-500">
-                Used in: Offices, labs, secure zones.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10"
-          >
-            <div class="md:w-1/2 flex justify-center">
-              <img
-                src="./assets/alarm systems.jpg"
-                alt="Alarm Systems"
-                class="rounded-lg shadow-md w-full max-w-sm aspect-[4/3] object-contain"
-              />
-            </div>
-            <div class="md:w-1/2 text-center md:text-right space-y-3">
-              <h2 class="text-2xl font-bold text-gray-800">Alarm Systems</h2>
-              <p class="text-gray-600 text-lg">
-                Our alarm systems detect intrusions, smoke, and unusual
-                activity—alerting you instantly.
-              </p>
-              <p class="text-sm text-gray-500">
-                Options: Sirens, mobile alerts, integration with police.
-              </p>
+            
+            <div class="product-card fade-in delay-6">
+              <div class="product-image">
+                <img src="./assets/solar camera.jpeg" alt="Solar Camera" />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">Solar Cameras</h3>
+                <p class="product-text">Eco-friendly solar-powered cameras for remote locations without electrical infrastructure.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Professional Services -->
-    <section id="services" class="py-20 bg-white text-center">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10">
-          Our Professional Services
-        </h2>
-        <ul
-          class="space-y-6 text-left text-gray-700 text-lg md:text-xl mx-2 md:mx-[10%] lg:mx-[20%]"
-        >
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">
-              CCTV Camera & Alarm Systems
-            </h3>
-            <p class="text-gray-600 text-base">
-              Complete setup and monitoring for residential and commercial
-              safety.
-            </p>
-          </li>
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">Intercom Systems</h3>
-            <p class="text-gray-600 text-base">
-              Reliable audio/video communication solutions for gated access.
-            </p>
-          </li>
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">
-              Home & Business Automation
-            </h3>
-            <p class="text-gray-600 text-base">
-              Smart controls for lighting, security, energy use, and more.
-            </p>
-          </li>
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">
-              Installation & Maintenance
-            </h3>
-            <p class="text-gray-600 text-base">
-              Expert setup and periodic checks to keep your systems running
-              efficiently.
-            </p>
-          </li>
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">
-              Free Telephone Tech Support
-            </h3>
-            <p class="text-gray-600 text-base">
-              Quick assistance from our support team whenever you need it.
-            </p>
-          </li>
-          <li class="flex items-start flex-col">
-            <h3 class="font-semibold text-gray-800">
-              Qualified CCTV Installers
-            </h3>
-            <p class="text-gray-600 text-base">
-              Certified professionals for reliable and compliant installations.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <!-- Additional Security Services -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">More Solutions</span>
+            <h2 class="section-title">Access Control & Alarm Systems</h2>
+            <p class="section-subtitle">Complete security infrastructure for your property.</p>
+          </div>
+          
+          <div class="grid-3">
+            <div class="feature-card fade-in delay-1">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Biometric Access</h3>
+              <p class="feature-text">Fingerprint and facial recognition systems for secure access control to restricted areas.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Alarm Systems</h3>
+              <p class="feature-text">Motion-activated alarms and intrusion detection systems with mobile alerts.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-3">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Video Door Phones</h3>
+              <p class="feature-text">Smart video intercoms to see and communicate with visitors before granting access.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Features -->
-    <section id="features" class="py-20 bg-gray-50 text-center">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10">
-          Advanced Tech Features
-        </h2>
-        <ul
-          class="space-y-4 text-left mx-2 md:mx-[10%] lg:mx-[20%] text-lg text-gray-700"
-        >
-          <li>
-            <strong>Infrared Motion Detection</strong> – Accurately senses human
-            activity in low or no-light environments to trigger instant alerts.
-          </li>
-          <li>
-            <strong>Enhanced Night Vision</strong> – Captures clear, detailed
-            footage even in total darkness using IR and low-light sensors.
-          </li>
-          <li>
-            <strong>Full HD & 4K Resolution</strong> – Get high-definition video
-            clarity with wide-angle coverage and zoom capabilities.
-          </li>
-          <li>
-            <strong>Remote Access & Control</strong> – Monitor, control, and
-            playback security footage from anywhere via mobile or web app.
-          </li>
-        </ul>
-      </div>
-    </section>
+      <!-- Why Choose Us -->
+      <section class="section section-gray">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-badge">Why Us</span>
+            <h2 class="section-title">Why Choose Our Security Solutions?</h2>
+          </div>
+          
+          <div class="grid-4">
+            <div class="feature-card fade-in delay-1">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">24/7 Monitoring</h3>
+              <p class="feature-text">Round-the-clock surveillance with cloud storage.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-2">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Mobile Access</h3>
+              <p class="feature-text">View live feeds from your smartphone anywhere.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-3">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Expert Installation</h3>
+              <p class="feature-text">Professional setup by certified technicians.</p>
+            </div>
+            
+            <div class="feature-card fade-in delay-4">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Warranty Support</h3>
+              <p class="feature-text">Comprehensive warranty and after-sales service.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-section fade-in" style="margin: 0;">
+            <div class="cta-content">
+              <h2 class="cta-title">Secure Your Property Today</h2>
+              <p class="cta-text">Get a free security assessment and customized quotation. Our experts will design the perfect surveillance system for your needs.</p>
+              <div class="hero-buttons">
+                <a href="./contact.html" class="btn btn-white">Get Free Quote</a>
+                <a href="tel:+917204657707" class="btn btn-secondary">Call: 7204657707</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
-        >
-          <!-- Left: Navigation Links -->
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm"
-          >
-            <a href="./about.html" class="hover:text-white transition"
-              >About Us</a
-            >
-            <a href="./solar-systems.html" class="hover:text-white transition"
-              >Services</a
-            >
-            <a href="./contact.html" class="hover:text-white transition"
-              >Contact</a
-            >
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/Shresht-Logo-Final.png" alt="Shresht Systems" />
+            <span>Shresht Systems</span>
           </div>
-
-          <!-- Center: Author Info -->
-          <div class="text-sm text-gray-400 text-left md:text-center">
-            <p class="leading-relaxed">
-              Website by
-              <a
-                href="https://jithesh.vercel.app/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Jithesh</a
-              >
-              &amp;
-              <a
-                href="https://mayurapatkar.github.io/"
-                target="_blank"
-                class="text-white font-medium hover:underline"
-                >Mayur</a
-              >
-            </p>
+          <p class="footer-desc">Your trusted partner for solar energy, security systems, and smart home appliances. Serving Udupi and Karnataka with quality products and expert service.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/917204657707" class="social-link" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
           </div>
-
-          <!-- Right: Copyright -->
-          <div class="text-sm text-gray-500 text-left md:text-right">
-            &copy; 2025
-            <span class="text-white font-medium">Shresht Systems</span>. All
-            rights reserved.
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
           </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="./solar-systems.html">Solar Systems</a>
+            <a href="./security-systems.html">Security Systems</a>
+            <a href="./home-appliances.html">Home Appliances</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Info</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Harshitha Building, Onthibettu, Udupi District - 576113</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>7204657707, 9901730305</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>shreshtsystems@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <strong>Shresht Systems</strong>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobile-menu");
-      hamburger.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      navbar.classList.add('scrolled');
+      
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+        observer.observe(el);
       });
     </script>
   </body>
