@@ -581,6 +581,12 @@ p {
   gap: 0.75rem;
 }
 
+.project-location {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+
 /* ===== FEATURE CARDS ===== */
 .feature-card {
   background: var(--white);
